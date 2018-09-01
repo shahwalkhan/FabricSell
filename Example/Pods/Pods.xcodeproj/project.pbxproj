@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F26F9C213A782D00BFAB81 /* EGGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F26F9B213A782D00BFAB81 /* EGGridView.swift */; };
 		39BA981217A1F1989A3D3C08269D08F8 /* Pods-FabricSell_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A047C47EB59E3604C510135F8314226E /* Pods-FabricSell_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		561DA9903A2A6ECEDFBE4A32C26D4AF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		73A4F87520FB52D2DB37DBC66792B7BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		B0DEEBE734099ABACC30189BB1157EAA /* Pods-FabricSell_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5F4D864C03BD30ECF7734A23B16F8A /* Pods-FabricSell_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBB54215A877741B31344A69A3F49AE6 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F615624C533801D977E78ABDA83B7 /* ReplaceMe.swift */; };
 		CDD72CAB9B94CB264E85CA22A98B7C4B /* Pods-FabricSell_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F863710FCC8C120F74C937B213F34D /* Pods-FabricSell_Tests-dummy.m */; };
 		EC816BB91E5D9A46E4E5C21644737D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		F360CC382FD283C775D54E8DA8BE56A8 /* FabricSell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E059AE2469A08318C9527B3039B00B91 /* FabricSell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,38 +40,38 @@
 		0343F55B2DF7FD92F877DCEC7F176B50 /* Pods-FabricSell_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Example.release.xcconfig"; sourceTree = "<group>"; };
 		04941B5B80745CDAA6AAA4F0C63C42E1 /* Pods-FabricSell_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FabricSell_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		173D87E92F56B15D3C6E7EE5616163DF /* Pods-FabricSell_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FabricSell_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		18F26F9B213A782D00BFAB81 /* EGGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EGGridView.swift; path = FabricSell/Classes/EGGridView.swift; sourceTree = "<group>"; };
 		23AB311CD1E56644670222595D95E61C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D296DDF1AAD3527F170407F5B9E2907 /* Pods-FabricSell_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FabricSell_Example-resources.sh"; sourceTree = "<group>"; };
 		3B3A656BDD724E3F0F29637F183198A6 /* Pods-FabricSell_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FabricSell_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4B6E43C0931BC3F8C7352E636508B08B /* Pods-FabricSell_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4DE57EA56AC70801BACFD619701D0531 /* FabricSell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FabricSell.framework; path = FabricSell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE57EA56AC70801BACFD619701D0531 /* FabricSell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FabricSell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F92EC6AE2BB991BE77E87835EB72C8C /* Pods-FabricSell_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FabricSell_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C696C4EFC7CAF8EF8F6B85B1C0C4C89 /* Pods_FabricSell_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FabricSell_Tests.framework; path = "Pods-FabricSell_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C696C4EFC7CAF8EF8F6B85B1C0C4C89 /* Pods_FabricSell_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FabricSell_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654C405ED136F3BC6B05C5801E4AC726 /* Pods-FabricSell_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FabricSell_Tests-resources.sh"; sourceTree = "<group>"; };
 		6CD79A1361E63A030D7E3ED49B9B0D2C /* FabricSell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FabricSell-dummy.m"; sourceTree = "<group>"; };
 		790636412215C26C56F7D9E31260694E /* FabricSell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FabricSell.modulemap; sourceTree = "<group>"; };
 		8453E23960848DBE7AD924FFF51EFE48 /* Pods-FabricSell_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FabricSell_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		85460E6E25A64D49D176918BFDA1D33A /* Pods-FabricSell_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FabricSell_Example.modulemap"; sourceTree = "<group>"; };
 		86568BFF53658CD26D7EDE6DF1B52A54 /* FabricSell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FabricSell.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B5F4D864C03BD30ECF7734A23B16F8A /* Pods-FabricSell_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FabricSell_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A047C47EB59E3604C510135F8314226E /* Pods-FabricSell_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FabricSell_Example-umbrella.h"; sourceTree = "<group>"; };
 		A291C151F8AEFAC9E7FEEAD635EC3F90 /* FabricSell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FabricSell-prefix.pch"; sourceTree = "<group>"; };
-		AB012DA4370864B9FF8A069A26397565 /* Pods_FabricSell_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FabricSell_Example.framework; path = "Pods-FabricSell_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB012DA4370864B9FF8A069A26397565 /* Pods_FabricSell_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FabricSell_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F863710FCC8C120F74C937B213F34D /* Pods-FabricSell_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FabricSell_Tests-dummy.m"; sourceTree = "<group>"; };
 		BAF0743BE42F7EE8365D6A1E041899B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A8F3AF51117E7CE6BA5031EA801F67 /* Pods-FabricSell_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FabricSell_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C80F615624C533801D977E78ABDA83B7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FabricSell/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		CCDD65E2719356BBAC826A1BE69C0E7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CCDD65E2719356BBAC826A1BE69C0E7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CD097C7369AD0231AD85737AC387D5D7 /* Pods-FabricSell_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D5B12039EAE679431584AE518400CE93 /* Pods-FabricSell_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD69120F3ACB9F2132FA80B976B0C3AC /* Pods-FabricSell_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FabricSell_Tests.modulemap"; sourceTree = "<group>"; };
 		E059AE2469A08318C9527B3039B00B91 /* FabricSell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FabricSell-umbrella.h"; sourceTree = "<group>"; };
 		E83ECD90DB81918C931BCBCC5A270F05 /* Pods-FabricSell_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FabricSell_Example-dummy.m"; sourceTree = "<group>"; };
-		E916D6CFA94F006BF40CB97B4E7EFEA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E916D6CFA94F006BF40CB97B4E7EFEA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EC7FA260B7955F33D3821F92703CC035 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F217154EB8A361834E295E73D5D009E9 /* FabricSell.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FabricSell.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F217154EB8A361834E295E73D5D009E9 /* FabricSell.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FabricSell.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		140D94C07C02CB98CCCF0C1BEBB1A730 /* FabricSell */ = {
 			isa = PBXGroup;
 			children = (
-				C80F615624C533801D977E78ABDA83B7 /* ReplaceMe.swift */,
+				18F26F9B213A782D00BFAB81 /* EGGridView.swift */,
 				B51FD11D101E46EBF141FB0D97B81001 /* Pod */,
 				760098B76DDE0EF912238210184160CA /* Support Files */,
 			);
@@ -344,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD62D5564F16B4018605B8F491F5C2A3 /* FabricSell-dummy.m in Sources */,
-				CBB54215A877741B31344A69A3F49AE6 /* ReplaceMe.swift in Sources */,
+				18F26F9C213A782D00BFAB81 /* EGGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
