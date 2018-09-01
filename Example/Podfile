@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FabricSell_Example' do
+  pod 'FabricSell', :path => '../'
+
+  target 'FabricSell_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
