@@ -1,0 +1,16 @@
+PODS:
+  - FabricSell (0.1.0)
+
+DEPENDENCIES:
+  - FabricSell (from `../`)
+
+EXTERNAL SOURCES:
+  FabricSell:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FabricSell: 9b7fbab1d5ef7b7d33b8505b49ca8c0a31520625
+
+PODFILE CHECKSUM: 0116e8c80a328c120825b33136b0f4eda8892804
+
+COCOAPODS: 1.5.3

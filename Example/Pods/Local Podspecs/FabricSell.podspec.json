@@ -1,0 +1,22 @@
+{
+  "name": "FabricSell",
+  "version": "0.1.0",
+  "summary": "A short description of FabricSell.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shahwalkhan@gmail.com/FabricSell",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shahwalkhan@gmail.com": "shahwalkhan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/shahwalkhan@gmail.com/FabricSell.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FabricSell/Classes/**/*"
+}

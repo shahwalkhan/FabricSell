@@ -1,0 +1,6 @@
+framework module FabricSell {
+  umbrella header "FabricSell-umbrella.h"
+
+  export *
+  module * { export * }
+}
