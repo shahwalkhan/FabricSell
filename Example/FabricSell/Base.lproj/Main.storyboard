@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,44 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-t1-U4l">
+                                <rect key="frame" x="135.5" y="135" width="104" height="397"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-j6-A52" customClass="EGGridView" customModule="FabricSell">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="129"/>
+                                        <color key="backgroundColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbY-TJ-jfs" customClass="EGGridView" customModule="FabricSell">
+                                        <rect key="frame" x="0.0" y="134" width="104" height="129"/>
+                                        <color key="backgroundColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWB-ij-4MB" customClass="EGGridView" customModule="FabricSell">
+                                        <rect key="frame" x="0.0" y="268" width="104" height="129"/>
+                                        <color key="backgroundColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="UWV-oG-Xdu"/>
+                                    <constraint firstAttribute="height" constant="397" id="fd9-VJ-fZJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gcq-t1-U4l" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="0vq-g8-XQk"/>
+                            <constraint firstItem="gcq-t1-U4l" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="U31-HL-9Ep"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstGridView" destination="e8s-j6-A52" id="b6b-hE-pzw"/>
+                        <outlet property="secondGridView" destination="CbY-TJ-jfs" id="QTZ-OB-NXY"/>
+                        <outlet property="thirdGridView" destination="gWB-ij-4MB" id="RIV-mT-h3C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="127.28635682158921"/>
         </scene>
     </scenes>
 </document>

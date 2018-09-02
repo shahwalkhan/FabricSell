@@ -7,18 +7,18 @@
 
 import UIKit
 
-class EGGridView: UIView {
+open class EGGridView: UIView {
     
     private(set) var isSetup = true
     private var updateConstraint = true
     
     private var coverImageView:UIImageView!
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         
         if isSetup  {
             isSetup = false
@@ -29,7 +29,7 @@ class EGGridView: UIView {
         }
     }
     
-    override func updateConstraints() {
+    override open func updateConstraints() {
         
         if updateConstraint {
             updateConstraint = false
@@ -42,7 +42,25 @@ class EGGridView: UIView {
         super.updateConstraints()
     }
     
-    func set(image with:URL) {
-        
+    public func setImage(with url:URL) {
+        self.coverImageView.image = nil
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if data != nil && error == nil {
+                self.coverImageView.image = UIImage(data: data!)
+            } else {
+                // Set Placeholder image here
+            }
+        }
+    }
+    
+    public func setImage(with url:URL, success:@escaping (_ data:Data)->Void, failed:@escaping (_ error:Error?)->Void) {
+        self.coverImageView.image = nil
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if data != nil && error == nil {
+                success(data!)
+            } else {
+                failed(error)
+            }
+        }
     }
 }
