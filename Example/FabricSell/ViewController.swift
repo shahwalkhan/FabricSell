@@ -28,6 +28,15 @@ class ViewController: UIViewController {
 
     }
 
+    @IBAction func tempClick(_ sender: Any) {
+        
+//        let c = secondGridView.openPop(controller: self)
+//        self.show(c, sender: self)
+
+        _ = EGOfferGridViewController()
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

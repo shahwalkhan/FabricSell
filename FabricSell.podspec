@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FabricSell'
-  s.version          = '1.0.1'
+  s.version          = '1.0.3'
   s.summary          = 'This is all about giving and sharing and taking and receiving.'
   s.swift_version    = '4.0'
 # This description is used to generate tags and improve search results.
@@ -32,10 +32,10 @@ In detail description I dont have anything to describe about this project
 
   s.source_files = 'FabricSell/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'FabricSell' => ['FabricSell/Assets/*.png']
-  # }
-
+   s.resource_bundles = {
+     'FabricSell' => ['FabricSell/**/*.{storyboard,xib,xcassets,json,imageset,png}', 'FabricSell/Resources/**/*.{xcassets,json,imageset,png}']
+   }
+#   s.resources = ['FabricSell/Resources/Pod.bundle']
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

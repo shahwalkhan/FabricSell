@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGOfferGridViewController" customModule="FabricSell" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="uo3-6A-ekv" id="piv-sP-4db"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-6A-ekv">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBn-gA-NSI">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu7-zK-y4K">
+                            <rect key="frame" x="10" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="PE2-Pc-vto"/>
+                                <constraint firstAttribute="width" constant="44" id="u1s-oW-5gC"/>
+                            </constraints>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="closeController:" destination="-1" eventType="touchUpInside" id="hyt-Pk-wml"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.44705882352941173" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bu7-zK-y4K" secondAttribute="bottom" id="55d-bZ-knm"/>
+                        <constraint firstAttribute="height" constant="44" id="ZSu-XL-4O9"/>
+                        <constraint firstItem="bu7-zK-y4K" firstAttribute="leading" secondItem="tBn-gA-NSI" secondAttribute="leading" constant="10" id="kBp-df-N6J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uo3-6A-ekv" firstAttribute="top" secondItem="tBn-gA-NSI" secondAttribute="bottom" id="63Q-hm-ne2"/>
+                <constraint firstItem="tBn-gA-NSI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9jA-x0-Pax"/>
+                <constraint firstItem="tBn-gA-NSI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="U09-sE-s8S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uo3-6A-ekv" secondAttribute="trailing" id="XGb-nd-lpU"/>
+                <constraint firstItem="tBn-gA-NSI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ywa-QK-Z4a"/>
+                <constraint firstItem="uo3-6A-ekv" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Z9M-C5-iOd"/>
+                <constraint firstItem="uo3-6A-ekv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qHe-rd-3Ye"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

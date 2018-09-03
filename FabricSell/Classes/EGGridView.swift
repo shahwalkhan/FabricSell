@@ -8,18 +8,23 @@
 import UIKit
 
 open class EGGridView: UIView {
-    @IBInspectable open var enabledPowerBy: Bool = true {
+    // Bool variable to show and hide PoweredBy thum icon
+    @IBInspectable public var enabledPowerBy: Bool = true {
         didSet {
             if powerByThumImageView != nil {
                 powerByThumImageView.isHidden = !enabledPowerBy
             }
         }
     }
-    fileprivate(set) var isSetup = false
-    open var coverImageView:UIImageView!
-    fileprivate var powerByThumImageView:UIImageView!
-    fileprivate var shouldSetupConstraints = true
     
+    // UIImageView to show images
+    public var coverImageView:UIImageView!
+    fileprivate var powerByThumImageView:UIImageView!
+    
+    // Local Flag to controll functionality
+    fileprivate var shouldSetupConstraints = true
+    fileprivate(set) var isSetup = false
+
     // MARK: - Initialisers
     override public init(frame: CGRect) {
         
@@ -58,20 +63,21 @@ open class EGGridView: UIView {
      Override this function to initialize subviews, set default values, etc.
      */
     func setup() {
-        // Abstract method.
+        // coverImageView to show cover image.
         coverImageView = UIImageView(frame: CGRect.zero)
         coverImageView.backgroundColor = UIColor.gray
         coverImageView.contentMode = self.contentMode
         self.addSubview(coverImageView)
         
+        //        poweredBy Engaging Choice icon | default it's invisible
         powerByThumImageView = UIImageView(frame: CGRect.zero)
         powerByThumImageView.backgroundColor = UIColor.black
         powerByThumImageView.contentMode = .scaleToFill
-        powerByThumImageView.image = UIImage(named: "icon")
+        powerByThumImageView.image = UIImage(named: "poweredByIcon", in: EGOfferGridViewController.bundle, compatibleWith: nil)
         powerByThumImageView.isHidden = !enabledPowerBy
         self.addSubview(powerByThumImageView)
     }
-    
+ 
     
     // MARK: - Accessibility
     /**

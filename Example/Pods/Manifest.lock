@@ -1,5 +1,5 @@
 PODS:
-  - FabricSell (0.1.0)
+  - FabricSell (1.0.3)
 
 DEPENDENCIES:
   - FabricSell (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FabricSell: c1b6d33cffd3233d62c822605937cd332f8c6894
+  FabricSell: 0d6e7b3c75de8e81dfffa10fd217364eb68545ad
 
 PODFILE CHECKSUM: 0116e8c80a328c120825b33136b0f4eda8892804
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,6 +28,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-j6-A52" customClass="EGGridView" customModule="FabricSell">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="129"/>
                                         <color key="backgroundColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enabledPowerBy" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbY-TJ-jfs" customClass="EGGridView" customModule="FabricSell">
                                         <rect key="frame" x="0.0" y="134" width="104" height="129"/>
@@ -42,11 +46,24 @@
                                     <constraint firstAttribute="height" constant="397" id="fd9-VJ-fZJ"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgj-vR-uvS">
+                                <rect key="frame" x="36" y="600" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="soQ-Lb-DM7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tempClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aih-xz-T41"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gcq-t1-U4l" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="0vq-g8-XQk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pgj-vR-uvS" secondAttribute="trailing" constant="20" id="BCh-8Z-swl"/>
                             <constraint firstItem="gcq-t1-U4l" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="U31-HL-9Ep"/>
+                            <constraint firstItem="pgj-vR-uvS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="UXY-GA-HoW"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pgj-vR-uvS" secondAttribute="bottom" constant="37" id="o6J-fn-BYS"/>
                         </constraints>
                     </view>
                     <connections>
