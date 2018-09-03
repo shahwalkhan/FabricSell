@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1D24A68A793258BE420641134EE632 /* FabricSell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D8004CC7BF8C880770A2B96FF142236 /* FabricSell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39BA981217A1F1989A3D3C08269D08F8 /* Pods-FabricSell_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A047C47EB59E3604C510135F8314226E /* Pods-FabricSell_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		561DA9903A2A6ECEDFBE4A32C26D4AF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		6915B879A668239BAF94D7FA747D2E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		73A4F87520FB52D2DB37DBC66792B7BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		97B8EA08ED237A81B89F64A4A00C5C92 /* EGGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A036CC4714E177E74ED6F1CFB2155 /* EGGridView.swift */; };
-		AD1F33AB78AD1D4D19DECCC6F64F0C4F /* FabricSell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB95CDFA0F26BB9DEE88CE757BD4C8C /* FabricSell-dummy.m */; };
 		B0DEEBE734099ABACC30189BB1157EAA /* Pods-FabricSell_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5F4D864C03BD30ECF7734A23B16F8A /* Pods-FabricSell_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E7EBA23859A447F4F0673ECCA44FB9 /* EGGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A64B5F37847495431C8F8223325BA /* EGGridView.swift */; };
+		C00E1DCE6E8D760AD630E8ED28C2FEFA /* ECDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C781EAA3F12189A11C65CA1E8ECEFDD /* ECDownloadManager.swift */; };
+		C9D8F10840054BA154BCA5B9DA3A0F7B /* FabricSell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3967822F97A7BE4640B3EC75152CADF0 /* FabricSell-dummy.m */; };
 		CDD72CAB9B94CB264E85CA22A98B7C4B /* Pods-FabricSell_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F863710FCC8C120F74C937B213F34D /* Pods-FabricSell_Tests-dummy.m */; };
 		EC816BB91E5D9A46E4E5C21644737D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		F360CC382FD283C775D54E8DA8BE56A8 /* FabricSell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FA4A24BB2B430F6474F26193822628 /* FabricSell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F48A5B50C9AD5D0027392D6055423EA7 /* Pods-FabricSell_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E83ECD90DB81918C931BCBCC5A270F05 /* Pods-FabricSell_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 115FFAF76B6ACC8149AC5A7AA51526B5;
+			remoteGlobalIDString = 9F5583BBA1E4A34A1AA7DFBB3648A0B9;
 			remoteInfo = FabricSell;
 		};
 		8672F4928215C1E186B8541267F3C156 /* PBXContainerItemProxy */ = {
@@ -39,30 +40,30 @@
 /* Begin PBXFileReference section */
 		0343F55B2DF7FD92F877DCEC7F176B50 /* Pods-FabricSell_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Example.release.xcconfig"; sourceTree = "<group>"; };
 		04941B5B80745CDAA6AAA4F0C63C42E1 /* Pods-FabricSell_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FabricSell_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		070E33A7119D43E8474D325C949BE832 /* FabricSell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FabricSell.modulemap; sourceTree = "<group>"; };
 		173D87E92F56B15D3C6E7EE5616163DF /* Pods-FabricSell_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FabricSell_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1DC4DD2A4D401AB19F9BBD10ADB45141 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		23AB311CD1E56644670222595D95E61C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		240E5AE9A366A34D45517245B9480101 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		286C067F59FF9B4629794D69B385094E /* FabricSell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FabricSell-prefix.pch"; sourceTree = "<group>"; };
 		2D296DDF1AAD3527F170407F5B9E2907 /* Pods-FabricSell_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FabricSell_Example-resources.sh"; sourceTree = "<group>"; };
-		34EB2EC041ADC441FB14A64788822AEC /* FabricSell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FabricSell.xcconfig; sourceTree = "<group>"; };
+		3967822F97A7BE4640B3EC75152CADF0 /* FabricSell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FabricSell-dummy.m"; sourceTree = "<group>"; };
 		3B3A656BDD724E3F0F29637F183198A6 /* Pods-FabricSell_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FabricSell_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4B6E43C0931BC3F8C7352E636508B08B /* Pods-FabricSell_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4DE57EA56AC70801BACFD619701D0531 /* FabricSell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FabricSell.framework; path = FabricSell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F92EC6AE2BB991BE77E87835EB72C8C /* Pods-FabricSell_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FabricSell_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C696C4EFC7CAF8EF8F6B85B1C0C4C89 /* Pods_FabricSell_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FabricSell_Tests.framework; path = "Pods-FabricSell_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		623E29411B691E0EA92F2A430441290B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		654C405ED136F3BC6B05C5801E4AC726 /* Pods-FabricSell_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FabricSell_Tests-resources.sh"; sourceTree = "<group>"; };
-		7CB95CDFA0F26BB9DEE88CE757BD4C8C /* FabricSell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FabricSell-dummy.m"; sourceTree = "<group>"; };
-		7D67B73E221C91875012F63753B92108 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		835A036CC4714E177E74ED6F1CFB2155 /* EGGridView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EGGridView.swift; path = FabricSell/Classes/EGGridView.swift; sourceTree = "<group>"; };
+		6C41C00D5EDA5FA65F30C4B2D1491D4C /* FabricSell.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FabricSell.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		700A64B5F37847495431C8F8223325BA /* EGGridView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EGGridView.swift; path = FabricSell/Classes/EGGridView.swift; sourceTree = "<group>"; };
 		8453E23960848DBE7AD924FFF51EFE48 /* Pods-FabricSell_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FabricSell_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		85460E6E25A64D49D176918BFDA1D33A /* Pods-FabricSell_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FabricSell_Example.modulemap"; sourceTree = "<group>"; };
-		8D2B7501EDD00E45BBFF9D7F2BF89017 /* FabricSell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FabricSell.modulemap; sourceTree = "<group>"; };
+		8C781EAA3F12189A11C65CA1E8ECEFDD /* ECDownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECDownloadManager.swift; path = FabricSell/Classes/ECDownloadManager.swift; sourceTree = "<group>"; };
+		8D8004CC7BF8C880770A2B96FF142236 /* FabricSell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FabricSell-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		947500A002503E7816523C46A4647240 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9B5F4D864C03BD30ECF7734A23B16F8A /* Pods-FabricSell_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FabricSell_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9E183CE86F6E9D725D93E6E7A8BC71C2 /* FabricSell.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FabricSell.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A047C47EB59E3604C510135F8314226E /* Pods-FabricSell_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FabricSell_Example-umbrella.h"; sourceTree = "<group>"; };
+		A4C7046D68F68925A8E1E08DF94EFDA5 /* FabricSell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FabricSell-prefix.pch"; sourceTree = "<group>"; };
 		AB012DA4370864B9FF8A069A26397565 /* Pods_FabricSell_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FabricSell_Example.framework; path = "Pods-FabricSell_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F863710FCC8C120F74C937B213F34D /* Pods-FabricSell_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FabricSell_Tests-dummy.m"; sourceTree = "<group>"; };
 		BAF0743BE42F7EE8365D6A1E041899B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,24 +71,25 @@
 		CD097C7369AD0231AD85737AC387D5D7 /* Pods-FabricSell_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D5B12039EAE679431584AE518400CE93 /* Pods-FabricSell_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD69120F3ACB9F2132FA80B976B0C3AC /* Pods-FabricSell_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FabricSell_Tests.modulemap"; sourceTree = "<group>"; };
-		E7FA4A24BB2B430F6474F26193822628 /* FabricSell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FabricSell-umbrella.h"; sourceTree = "<group>"; };
 		E83ECD90DB81918C931BCBCC5A270F05 /* Pods-FabricSell_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FabricSell_Example-dummy.m"; sourceTree = "<group>"; };
+		F5B0D0D8E0D7E054DD71AF47E56BEF01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC227673E3BA6007FFB20C153925D0FE /* FabricSell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FabricSell.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C0223C8620336BB171244FB99205DBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				561DA9903A2A6ECEDFBE4A32C26D4AF0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D80C16055D74ACDA0E46152E07E9D55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				73A4F87520FB52D2DB37DBC66792B7BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E78BCC77CD2EA7AA3711F0031B53396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6915B879A668239BAF94D7FA747D2E92 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,22 +104,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B25E24F44ADB0C7AC4995D9B6908243 /* Pod */ = {
+		1B95FAF3EC36099757B36FFEC39E68DD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9E183CE86F6E9D725D93E6E7A8BC71C2 /* FabricSell.podspec */,
-				7D67B73E221C91875012F63753B92108 /* LICENSE */,
-				623E29411B691E0EA92F2A430441290B /* README.md */,
+				6C41C00D5EDA5FA65F30C4B2D1491D4C /* FabricSell.podspec */,
+				947500A002503E7816523C46A4647240 /* LICENSE */,
+				1DC4DD2A4D401AB19F9BBD10ADB45141 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		4BCA2FA95875C39001F07AE43889B03F /* FabricSell */ = {
+		213F5FB4EE21FA0CE538E2DE0ABF9BA0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				835A036CC4714E177E74ED6F1CFB2155 /* EGGridView.swift */,
-				0B25E24F44ADB0C7AC4995D9B6908243 /* Pod */,
-				8A6EF5B4A7D0CEE379D7CE42E2117500 /* Support Files */,
+				318A460A48ADB469739E132424065178 /* FabricSell */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		318A460A48ADB469739E132424065178 /* FabricSell */ = {
+			isa = PBXGroup;
+			children = (
+				8C781EAA3F12189A11C65CA1E8ECEFDD /* ECDownloadManager.swift */,
+				700A64B5F37847495431C8F8223325BA /* EGGridView.swift */,
+				1B95FAF3EC36099757B36FFEC39E68DD /* Pod */,
+				8D4C2D453E881AA3DFF2B75080867718 /* Support Files */,
 			);
 			name = FabricSell;
 			path = ../..;
@@ -135,22 +146,22 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				C2A775C94994D4EEDF130308586E0EF3 /* Development Pods */,
+				213F5FB4EE21FA0CE538E2DE0ABF9BA0 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				A41E188DA7DB4243C53FC326368CE024 /* Products */,
 				93CCECE12023E649F7A9B00D1A6DE683 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A6EF5B4A7D0CEE379D7CE42E2117500 /* Support Files */ = {
+		8D4C2D453E881AA3DFF2B75080867718 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D2B7501EDD00E45BBFF9D7F2BF89017 /* FabricSell.modulemap */,
-				34EB2EC041ADC441FB14A64788822AEC /* FabricSell.xcconfig */,
-				7CB95CDFA0F26BB9DEE88CE757BD4C8C /* FabricSell-dummy.m */,
-				286C067F59FF9B4629794D69B385094E /* FabricSell-prefix.pch */,
-				E7FA4A24BB2B430F6474F26193822628 /* FabricSell-umbrella.h */,
-				240E5AE9A366A34D45517245B9480101 /* Info.plist */,
+				070E33A7119D43E8474D325C949BE832 /* FabricSell.modulemap */,
+				FC227673E3BA6007FFB20C153925D0FE /* FabricSell.xcconfig */,
+				3967822F97A7BE4640B3EC75152CADF0 /* FabricSell-dummy.m */,
+				A4C7046D68F68925A8E1E08DF94EFDA5 /* FabricSell-prefix.pch */,
+				8D8004CC7BF8C880770A2B96FF142236 /* FabricSell-umbrella.h */,
+				F5B0D0D8E0D7E054DD71AF47E56BEF01 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FabricSell";
@@ -201,14 +212,6 @@
 			path = "Target Support Files/Pods-FabricSell_Example";
 			sourceTree = "<group>";
 		};
-		C2A775C94994D4EEDF130308586E0EF3 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4BCA2FA95875C39001F07AE43889B03F /* FabricSell */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		C39F184B20275BDE43DC6196F32FEF6D /* Pods-FabricSell_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,14 +233,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3BF1ABE1DA8DD4BF4F47D18AF9F9DACD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F360CC382FD283C775D54E8DA8BE56A8 /* FabricSell-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		637EC9DC5D00161ACBCA7D489922C20A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,26 +249,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4F292378B48A5E7769BE5DE940F4BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1D24A68A793258BE420641134EE632 /* FabricSell-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		115FFAF76B6ACC8149AC5A7AA51526B5 /* FabricSell */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA3B663996E8D23E57D411111E167CF2 /* Build configuration list for PBXNativeTarget "FabricSell" */;
-			buildPhases = (
-				98B2B8F34BE123118E2CACAD3F854CF0 /* Sources */,
-				1C0223C8620336BB171244FB99205DBE /* Frameworks */,
-				3BF1ABE1DA8DD4BF4F47D18AF9F9DACD /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FabricSell;
-			productName = FabricSell;
-			productReference = 4DE57EA56AC70801BACFD619701D0531 /* FabricSell.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		93ED7A7B560F2E6F0D358ACFA328F887 /* Pods-FabricSell_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D49C0237214EA2C7D0F3B95A9E9275 /* Build configuration list for PBXNativeTarget "Pods-FabricSell_Tests" */;
@@ -290,6 +276,23 @@
 			name = "Pods-FabricSell_Tests";
 			productName = "Pods-FabricSell_Tests";
 			productReference = 5C696C4EFC7CAF8EF8F6B85B1C0C4C89 /* Pods_FabricSell_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F5583BBA1E4A34A1AA7DFBB3648A0B9 /* FabricSell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595F840735BDDE99BD2BFA69D56A24EC /* Build configuration list for PBXNativeTarget "FabricSell" */;
+			buildPhases = (
+				7D15B817781A934AAA87CCA2638D92D4 /* Sources */,
+				9E78BCC77CD2EA7AA3711F0031B53396 /* Frameworks */,
+				D4F292378B48A5E7769BE5DE940F4BB6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FabricSell;
+			productName = FabricSell;
+			productReference = 4DE57EA56AC70801BACFD619701D0531 /* FabricSell.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F3EB52D94B783B084F8397640BD380CB /* Pods-FabricSell_Example */ = {
@@ -331,7 +334,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				115FFAF76B6ACC8149AC5A7AA51526B5 /* FabricSell */,
+				9F5583BBA1E4A34A1AA7DFBB3648A0B9 /* FabricSell */,
 				F3EB52D94B783B084F8397640BD380CB /* Pods-FabricSell_Example */,
 				93ED7A7B560F2E6F0D358ACFA328F887 /* Pods-FabricSell_Tests */,
 			);
@@ -339,12 +342,13 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		98B2B8F34BE123118E2CACAD3F854CF0 /* Sources */ = {
+		7D15B817781A934AAA87CCA2638D92D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B8EA08ED237A81B89F64A4A00C5C92 /* EGGridView.swift in Sources */,
-				AD1F33AB78AD1D4D19DECCC6F64F0C4F /* FabricSell-dummy.m in Sources */,
+				C00E1DCE6E8D760AD630E8ED28C2FEFA /* ECDownloadManager.swift in Sources */,
+				B7E7EBA23859A447F4F0673ECCA44FB9 /* EGGridView.swift in Sources */,
+				C9D8F10840054BA154BCA5B9DA3A0F7B /* FabricSell-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +374,7 @@
 		18D98CD9A4B8117782257BE2FC213F9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FabricSell;
-			target = 115FFAF76B6ACC8149AC5A7AA51526B5 /* FabricSell */;
+			target = 9F5583BBA1E4A34A1AA7DFBB3648A0B9 /* FabricSell */;
 			targetProxy = 46DD075D4534C3B59E6525CA9953AA51 /* PBXContainerItemProxy */;
 		};
 		2586CB419D25DE4A4D12F66DB86CC77A /* PBXTargetDependency */ = {
@@ -382,6 +386,39 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2D1DF94880DBC223B7B9AD85058C688B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC227673E3BA6007FFB20C153925D0FE /* FabricSell.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FabricSell/FabricSell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FabricSell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FabricSell/FabricSell.modulemap";
+				PRODUCT_MODULE_NAME = FabricSell;
+				PRODUCT_NAME = FabricSell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,71 +481,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		A0E033DFDA4354BF6E4DCCDA19443481 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34EB2EC041ADC441FB14A64788822AEC /* FabricSell.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FabricSell/FabricSell-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FabricSell/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FabricSell/FabricSell.modulemap";
-				PRODUCT_MODULE_NAME = FabricSell;
-				PRODUCT_NAME = FabricSell;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AF12B623D1FF61C3F6174C3B361D72F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34EB2EC041ADC441FB14A64788822AEC /* FabricSell.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FabricSell/FabricSell-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FabricSell/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FabricSell/FabricSell.modulemap";
-				PRODUCT_MODULE_NAME = FabricSell;
-				PRODUCT_NAME = FabricSell;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -705,6 +677,38 @@
 			};
 			name = Release;
 		};
+		F4637918E427077A4596E027A14FE9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC227673E3BA6007FFB20C153925D0FE /* FabricSell.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FabricSell/FabricSell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FabricSell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FabricSell/FabricSell.modulemap";
+				PRODUCT_MODULE_NAME = FabricSell;
+				PRODUCT_NAME = FabricSell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -713,6 +717,15 @@
 			buildConfigurations = (
 				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
 				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595F840735BDDE99BD2BFA69D56A24EC /* Build configuration list for PBXNativeTarget "FabricSell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4637918E427077A4596E027A14FE9E5 /* Debug */,
+				2D1DF94880DBC223B7B9AD85058C688B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -731,15 +744,6 @@
 			buildConfigurations = (
 				C668D0059A66291332767FB71F66F564 /* Debug */,
 				CF947496187F8A6401C017EB77472C8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA3B663996E8D23E57D411111E167CF2 /* Build configuration list for PBXNativeTarget "FabricSell" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0E033DFDA4354BF6E4DCCDA19443481 /* Debug */,
-				AF12B623D1FF61C3F6174C3B361D72F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

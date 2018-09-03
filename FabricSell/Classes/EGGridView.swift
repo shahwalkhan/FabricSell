@@ -36,7 +36,7 @@ open class EGGridView: UIView {
         super.init(coder: aDecoder)
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         
         super.awakeFromNib()
         
@@ -161,7 +161,7 @@ open class EGGridView: UIView {
     /**
      SetImage download image from server and show in ECGridView
      */
-    open func set(image url:URL) {
+    open func setImage(with url:URL) {
         self.coverImageView.image = nil
         ECDownloadManager.shared.downloadImage(with: url, success: { (data) in
             self.coverImageView.image = UIImage(data: data)
@@ -174,7 +174,7 @@ open class EGGridView: UIView {
     /**
      SetImage download image from server with callback and show in ECGridView
      */
-    open func set(image url:URL, success:@escaping (_ data:Data) -> Void, failed:@escaping (_ error:Error?) -> Void) {
+    open func setImage(with url:URL, success:@escaping (_ data:Data) -> Void, failed:@escaping (_ error:Error?) -> Void) {
         self.coverImageView.image = nil
         ECDownloadManager.shared.downloadImage(with: url, success: { (data) in
             self.coverImageView.image = UIImage(data: data)
