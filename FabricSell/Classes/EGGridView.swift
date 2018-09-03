@@ -48,7 +48,7 @@ open class EGGridView: UIView {
             if data != nil && error == nil {
                 self.coverImageView.image = UIImage(data: data!)
             } else {
-                // Set Placeholder image here
+                // Set Placeholder image here ..
             }
         }
     }
