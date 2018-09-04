@@ -11,18 +11,9 @@ public class EGOfferGridViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: "\(EGOfferGridViewController.self)", bundle: EGOfferGridViewController.bundle)
-        topViewController?.show(self, sender: self)
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override open func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "\(EGOfferGridTableViewCell.self)", bundle: EGOfferGridViewController.bundle), forCellReuseIdentifier: "\(EGOfferGridTableViewCell.self)")
+        tableView.register(UINib(nibName: "\(EGOfferGridTableViewCell.self)", bundle: Bundle.bundle), forCellReuseIdentifier: "\(EGOfferGridTableViewCell.self)")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
@@ -39,16 +30,18 @@ public class EGOfferGridViewController: UIViewController {
         }
         return controller
     }
-    
-    static var bundle:Bundle {
-        let podBundle = Bundle(for: EGOfferGridViewController.self)
-        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
-        return Bundle(url: bundleURL!)!
-    }
 
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+extension Bundle {
+    static var bundle:Bundle {
+        let podBundle = Bundle(for: EGOfferGridViewController.self)
+        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
+        return Bundle(url: bundleURL!)!
     }
 }
 
@@ -62,12 +55,13 @@ extension EGOfferGridViewController:UITableViewDataSource {
             fatalError("Expected `\(EGOfferGridTableViewCell.self)` type for reuseIdentifier \(EGOfferGridTableViewCell.self).")
         }
         cell.bannderImageView.image = nil
+        cell.bannderImageView.startAnimating()
         cell.bannderImageView.sd_setImage(with: URL(string: "https://media.wmagazine.com/photos/584b0d43db73e24512ebf4ff/4:3/w_1536/GettyImages-628353490.jpg")!, completed: nil)
         return cell
     }
 }
 extension EGOfferGridViewController:UITableViewDelegate {
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 200
     }
 }

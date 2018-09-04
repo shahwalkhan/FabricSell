@@ -35,6 +35,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbY-TJ-jfs" customClass="EGGridView" customModule="FabricSell">
                                         <rect key="frame" x="0.0" y="134" width="104" height="129"/>
                                         <color key="backgroundColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enabledPowerBy" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWB-ij-4MB" customClass="EGGridView" customModule="FabricSell">
                                         <rect key="frame" x="0.0" y="268" width="104" height="129"/>

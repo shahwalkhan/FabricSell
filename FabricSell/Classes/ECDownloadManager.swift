@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import Alamofire
 
 class ECDownloadManager: NSObject {
     
@@ -15,17 +16,6 @@ class ECDownloadManager: NSObject {
     
     func downloadImage(with url:URL, success:@escaping(_ data:Data) -> Void, failed:@escaping (_ error:Error?) -> Void) {
         
-    
-//        URLSession.shared.dataTask(with: url) { (data, respose, error) in
-//            if error == nil && data != nil {
-//                DispatchQueue.main.async {
-//                    success(data!)
-//                }
-//            } else {
-//                DispatchQueue.main.async {
-//                    failed(error)
-//                }
-//            }
-//            }.resume()
+        
     }
 }

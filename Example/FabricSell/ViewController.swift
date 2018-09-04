@@ -25,16 +25,12 @@ class ViewController: UIViewController {
         }
 
         thirdGridView.setImage(with: URL(string: "https://media.wmagazine.com/photos/584b0d43db73e24512ebf4ff/4:3/w_1536/GettyImages-628353490.jpg")!)
+        thirdGridView.enabledPowerBy = true
 
     }
 
     @IBAction func tempClick(_ sender: Any) {
-        
-//        let c = secondGridView.openPop(controller: self)
-//        self.show(c, sender: self)
-
-        _ = EGOfferGridViewController()
-        
+        ECGridManager.shared.showOfferList(view: self, email: "")        
     }
     
     override func didReceiveMemoryWarning() {

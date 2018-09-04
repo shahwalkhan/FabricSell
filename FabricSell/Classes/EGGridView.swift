@@ -9,10 +9,10 @@ import UIKit
 
 open class EGGridView: UIView {
     // Bool variable to show and hide PoweredBy thum icon
-    @IBInspectable public var enabledPowerBy: Bool = true {
+    @IBInspectable open var enabledPowerBy: Bool = false {
         didSet {
             if powerByThumImageView != nil {
-                powerByThumImageView.isHidden = !enabledPowerBy
+                powerByThumImageView.isHidden = enabledPowerBy
             }
         }
     }
@@ -73,7 +73,7 @@ open class EGGridView: UIView {
         powerByThumImageView = UIImageView(frame: CGRect.zero)
         powerByThumImageView.backgroundColor = UIColor.black
         powerByThumImageView.contentMode = .scaleToFill
-        powerByThumImageView.image = UIImage(named: "poweredByIcon", in: EGOfferGridViewController.bundle, compatibleWith: nil)
+        powerByThumImageView.image = UIImage(named: "poweredByIcon", in: Bundle.bundle, compatibleWith: nil)
         powerByThumImageView.isHidden = !enabledPowerBy
         self.addSubview(powerByThumImageView)
     }
@@ -190,6 +190,6 @@ open class EGGridView: UIView {
 
 extension UIImage {
     var image:UIImage? {
-        return UIImage(named: "poweredByIcon", in: EGOfferGridViewController.bundle, compatibleWith: nil)
+        return UIImage(named: "poweredByIcon", in: Bundle.bundle, compatibleWith: nil)
     }
 }
