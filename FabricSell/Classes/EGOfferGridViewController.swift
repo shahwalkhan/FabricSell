@@ -59,14 +59,10 @@ extension EGOfferGridViewController:UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(EGOfferGridTableViewCell.self)", for: indexPath) as? EGOfferGridTableViewCell else {
-            fatalError("")
+            fatalError("Expected `\(EGOfferGridTableViewCell.self)` type for reuseIdentifier \(EGOfferGridTableViewCell.self).")
         }
         cell.bannderImageView.image = nil
-        ECDownloadManager.shared.downloadImage(with: URL(string: "https://media.wmagazine.com/photos/584b0d43db73e24512ebf4ff/4:3/w_1536/GettyImages-628353490.jpg")!, success: { (data) in
-            cell.bannderImageView.image = UIImage(data: data)
-        }) { (error) in
-            
-        }
+        cell.bannderImageView.sd_setImage(with: URL(string: "https://media.wmagazine.com/photos/584b0d43db73e24512ebf4ff/4:3/w_1536/GettyImages-628353490.jpg")!, completed: nil)
         return cell
     }
 }

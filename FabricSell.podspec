@@ -38,5 +38,6 @@ In detail description I dont have anything to describe about this project
 #   s.resources = ['FabricSell/Resources/Pod.bundle']
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'Alamofire', '~> 4.7'
+   s.dependency 'SDWebImage'
 end

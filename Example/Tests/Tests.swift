@@ -3,14 +3,30 @@ import FabricSell
 
 class Tests: XCTestCase {
     
+    let gridView = EGGridView()
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
-    
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    
+    func testEGGridViewPoweredByVisiblity() {
+        XCTAssert(gridView.enabledPowerBy == true)
+    }
+    
+    func testCoverImageIsNil() {
+        XCTAssert(gridView.coverImageView.image == nil)
+    }
+    
+    func testCoverImageConstraint()  {
+        XCTAssert(gridView.coverImageView.constraints.count == 0)
     }
     
     func testExample() {

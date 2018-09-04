@@ -26,5 +26,13 @@
       "FabricSell/**/*.{storyboard,xib,xcassets,json,imageset,png}",
       "FabricSell/Resources/**/*.{xcassets,json,imageset,png}"
     ]
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.7"
+    ],
+    "SDWebImage": [
+
+    ]
   }
 }

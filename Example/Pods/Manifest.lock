@@ -1,15 +1,28 @@
 PODS:
-  - FabricSell (1.0.3)
+  - Alamofire (4.7.3)
+  - FabricSell (1.0.3):
+    - Alamofire (~> 4.7)
+    - SDWebImage
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
 
 DEPENDENCIES:
   - FabricSell (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - SDWebImage
 
 EXTERNAL SOURCES:
   FabricSell:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FabricSell: 0d6e7b3c75de8e81dfffa10fd217364eb68545ad
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  FabricSell: deb6ac3bf6002c2265acb20f31449d755c3c9f5f
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
 PODFILE CHECKSUM: 0116e8c80a328c120825b33136b0f4eda8892804
 

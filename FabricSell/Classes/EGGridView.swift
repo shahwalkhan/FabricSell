@@ -169,11 +169,7 @@ open class EGGridView: UIView {
      */
     open func setImage(with url:URL) {
         self.coverImageView.image = nil
-        ECDownloadManager.shared.downloadImage(with: url, success: { (data) in
-            self.coverImageView.image = UIImage(data: data)
-        }) { (error) in
-            print("eror \(String(describing: error?.localizedDescription))")
-        }
+        self.coverImageView.sd_setImage(with: url, completed: nil)
     }
     
     // MARK: - Download Image with callback
@@ -182,11 +178,18 @@ open class EGGridView: UIView {
      */
     open func setImage(with url:URL, success:@escaping (_ data:Data) -> Void, failed:@escaping (_ error:Error?) -> Void) {
         self.coverImageView.image = nil
-        ECDownloadManager.shared.downloadImage(with: url, success: { (data) in
-            self.coverImageView.image = UIImage(data: data)
-            success(data)
-        }) { (error) in
-            failed(error)
+        self.coverImageView.sd_setImage(with: url) { (image, error, type, url) in
+            if image?.sd_imageData() != nil && error == nil {
+                success((image?.sd_imageData())!)
+            } else {
+                failed(error)
+            }
         }
+    }
+}
+
+extension UIImage {
+    var image:UIImage? {
+        return UIImage(named: "poweredByIcon", in: EGOfferGridViewController.bundle, compatibleWith: nil)
     }
 }
