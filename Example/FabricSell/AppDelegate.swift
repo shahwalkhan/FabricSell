@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FabricSell
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        ECGridManager.config(secretKey: "4334-sfds-23423sfs-23423")
         return true
     }
 

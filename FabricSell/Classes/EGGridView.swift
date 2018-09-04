@@ -71,9 +71,9 @@ open class EGGridView: UIView {
         
         //        poweredBy Engaging Choice icon | default it's invisible
         powerByThumImageView = UIImageView(frame: CGRect.zero)
-        powerByThumImageView.backgroundColor = UIColor.black
-        powerByThumImageView.contentMode = .scaleToFill
-        powerByThumImageView.image = UIImage(named: "poweredByIcon", in: Bundle.bundle, compatibleWith: nil)
+        powerByThumImageView.backgroundColor = UIColor(red: 61/255, green: 106/255, blue: 211/255, alpha: 1.0)
+        powerByThumImageView.contentMode = .scaleAspectFill
+        powerByThumImageView.image = UIImage.poweredByIcon
         powerByThumImageView.isHidden = !enabledPowerBy
         self.addSubview(powerByThumImageView)
     }
@@ -106,14 +106,14 @@ open class EGGridView: UIView {
                                              toItem: nil,
                                              attribute: .notAnAttribute,
                                              multiplier: 1,
-                                             constant: 30))
+                                             constant: 24))
             addConstraint(NSLayoutConstraint(item: powerByThumImageView,
                                              attribute: .width,
                                              relatedBy: .equal,
                                              toItem: nil,
                                              attribute: .notAnAttribute,
                                              multiplier: 1,
-                                             constant: 28))
+                                             constant: 24))
             addConstraint(NSLayoutConstraint(item: powerByThumImageView,
                                              attribute: .trailing,
                                              relatedBy: .equal,
@@ -189,7 +189,15 @@ open class EGGridView: UIView {
 }
 
 extension UIImage {
-    var image:UIImage? {
-        return UIImage(named: "poweredByIcon", in: Bundle.bundle, compatibleWith: nil)
+    static var poweredByIcon:UIImage? {
+        return UIImage(named: "icon", in: Bundle.bundle, compatibleWith: nil)
+    }
+    static var poweredByWithText:UIImage? {
+        return UIImage(named: "logoWithEngagingChoice", in: Bundle.bundle, compatibleWith: nil)
+    }
+}
+extension UIColor {
+    static var poweredByColor:UIColor {
+        return UIColor(red: 52/255, green: 62/255, blue: 74/255, alpha: 1.0)
     }
 }

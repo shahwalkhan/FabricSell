@@ -10,10 +10,25 @@ import UIKit
 public class ECGridManager: NSObject {
     
     public static let shared = ECGridManager()
+    fileprivate static var secretKey:String?
+    internal var getSecretKey:String {
+        if (ECGridManager.secretKey != nil) {
+            return ECGridManager.secretKey!
+        }
+        fatalError("Secret key is not provided, Please set Secret key in ECGrimanager.config(secretKey key:String) and add this line of code in didFinishLaunchingWithOptions")
+    }
+    
+    // MARK: - Config Key
+    /**
+        Add your secret key here
+     */
+    public static func config(secretKey key:String) {
+        ECGridManager.secretKey = key
+    }
     
     // MARK: - Show Offer List View Controller
     /**
-        This method require two paramers controller and email should not empty
+        Provide viewController to open OfferList View
         Email is mandotary to show Offer List View Cotroller
      */
     public func showOfferList(view controller:UIViewController, email:String) {

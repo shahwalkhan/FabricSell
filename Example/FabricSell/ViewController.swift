@@ -30,7 +30,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tempClick(_ sender: Any) {
-        ECGridManager.shared.showOfferList(view: self, email: "")        
+//        ECGridManager.shared.showOfferList(view: self, email: "")
+        
+        
+        _ = ECGridManager().showOfferList(view: self, email: "")
     }
     
     override func didReceiveMemoryWarning() {

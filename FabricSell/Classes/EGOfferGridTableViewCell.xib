@@ -22,6 +22,9 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="okN-5Q-Ubg">
                         <rect key="frame" x="0.0" y="0.0" width="483" height="189.5"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pJ-fs-uDZ" customClass="OverlayView" customModule="FabricSell" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="483" height="170"/>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyG-3r-XtA">
                         <rect key="frame" x="409.5" y="149" width="61" height="30"/>
                         <constraints>
@@ -34,18 +37,18 @@
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uber Ride Offer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWo-1k-77N">
-                        <rect key="frame" x="10" y="15" width="353" height="25"/>
+                        <rect key="frame" x="10" y="15" width="353" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="OOp-L0-ywR"/>
+                            <constraint firstAttribute="height" constant="20" id="OOp-L0-ywR"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid till july 20, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCR-IJ-SMe">
-                        <rect key="frame" x="10" y="40" width="353" height="22"/>
+                        <rect key="frame" x="10" y="35" width="353" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="22" id="LvO-cl-BwU"/>
+                            <constraint firstAttribute="height" constant="20" id="LvO-cl-BwU"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,6 +93,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="EWo-1k-77N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0R2-aq-Dxb"/>
+                    <constraint firstItem="5pJ-fs-uDZ" firstAttribute="top" secondItem="EWo-1k-77N" secondAttribute="bottom" constant="-35" id="4DB-gZ-Cl0"/>
+                    <constraint firstItem="5pJ-fs-uDZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7T2-Cn-2gU"/>
                     <constraint firstItem="Mmk-Je-ZvT" firstAttribute="leading" secondItem="RCR-IJ-SMe" secondAttribute="trailing" constant="10" id="9n6-fL-nrN"/>
                     <constraint firstItem="okN-5Q-Ubg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AUc-mg-YHk"/>
                     <constraint firstAttribute="trailing" secondItem="okN-5Q-Ubg" secondAttribute="trailing" id="Ak9-MV-Qsn"/>
@@ -98,8 +103,10 @@
                     <constraint firstAttribute="bottom" secondItem="okN-5Q-Ubg" secondAttribute="bottom" id="GLN-ca-5zj"/>
                     <constraint firstItem="RCR-IJ-SMe" firstAttribute="top" secondItem="EWo-1k-77N" secondAttribute="bottom" id="J5p-lb-T0a"/>
                     <constraint firstAttribute="trailing" secondItem="Mmk-Je-ZvT" secondAttribute="trailing" constant="10" id="KnJ-av-bGG"/>
+                    <constraint firstItem="Mmk-Je-ZvT" firstAttribute="leading" secondItem="5pJ-fs-uDZ" secondAttribute="trailing" constant="-110" id="UyX-sH-81I"/>
                     <constraint firstItem="EWo-1k-77N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="W9N-pS-F38"/>
                     <constraint firstItem="RCR-IJ-SMe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YVG-bg-TWr"/>
+                    <constraint firstAttribute="bottom" secondItem="5pJ-fs-uDZ" secondAttribute="bottom" constant="20" id="iKm-cc-uiG"/>
                     <constraint firstAttribute="trailing" secondItem="qyG-3r-XtA" secondAttribute="trailing" constant="12.6" id="jlP-Ag-od0"/>
                     <constraint firstItem="Mmk-Je-ZvT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="o4d-Xf-WcX"/>
                     <constraint firstAttribute="bottom" secondItem="qyG-3r-XtA" secondAttribute="bottom" constant="10" id="whu-OM-RC7"/>

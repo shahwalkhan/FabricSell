@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-t1-U4l">
-                                <rect key="frame" x="135.5" y="135" width="104" height="397"/>
+                                <rect key="frame" x="136" y="135" width="104" height="397"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-j6-A52" customClass="EGGridView" customModule="FabricSell">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="129"/>
@@ -59,13 +59,45 @@
                                     <action selector="tempClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aih-xz-T41"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Z-VW-2iz">
+                                <rect key="frame" x="64" y="44" width="275" height="86"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3B-um-A6y" customClass="ECPoweredByView" customModule="FabricSell">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="28"/>
+                                        <color key="backgroundColor" red="0.56470588239999997" green="0.76470588240000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="6cg-Uz-Bm6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEe-3C-A5f" customClass="ECPoweredByView" customModule="FabricSell">
+                                        <rect key="frame" x="0.0" y="29" width="275" height="28"/>
+                                        <color key="backgroundColor" red="0.56470588239999997" green="0.76470588240000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="9tj-KH-0yy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfn-RK-Lgq" customClass="ECPoweredByView" customModule="FabricSell">
+                                        <rect key="frame" x="0.0" y="58" width="275" height="28"/>
+                                        <color key="backgroundColor" red="0.56470588239999997" green="0.76470588240000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="SV9-Eg-GiO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="I0X-fe-b5x"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gcq-t1-U4l" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="0vq-g8-XQk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pgj-vR-uvS" secondAttribute="trailing" constant="20" id="BCh-8Z-swl"/>
+                            <constraint firstItem="Q9Z-VW-2iz" firstAttribute="trailing" secondItem="pgj-vR-uvS" secondAttribute="trailing" id="Rzp-Yf-MQt"/>
                             <constraint firstItem="gcq-t1-U4l" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="U31-HL-9Ep"/>
                             <constraint firstItem="pgj-vR-uvS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="UXY-GA-HoW"/>
+                            <constraint firstItem="Q9Z-VW-2iz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="64" id="aCw-1q-2cj"/>
+                            <constraint firstItem="gcq-t1-U4l" firstAttribute="top" secondItem="Q9Z-VW-2iz" secondAttribute="bottom" constant="5" id="eQ3-wu-AXX"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pgj-vR-uvS" secondAttribute="bottom" constant="37" id="o6J-fn-BYS"/>
                         </constraints>
                     </view>
