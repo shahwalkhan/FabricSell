@@ -23,8 +23,8 @@
   "source_files": "FabricSell/Classes/**/*",
   "resource_bundles": {
     "FabricSell": [
-      "FabricSell/**/*.{storyboard,xib,xcassets,json,imageset,png}",
-      "FabricSell/Resources/**/*.{xcassets,json,imageset,png}"
+      "FabricSell/**/*.{storyboard,xib,xcassets,json,imageset,png,ttf}",
+      "FabricSell/Resources/**/*.{xcassets,json,imageset,png,ttf}"
     ]
   },
   "dependencies": {

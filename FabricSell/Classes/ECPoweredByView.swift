@@ -52,9 +52,14 @@ public class ECPoweredByView: UIView {
         self.addSubview(engagingchoice)
         
         poweredBy = UILabel(frame: CGRect.zero)
-        poweredBy.text = EngagingName.poweredBy.rawValue
+        poweredBy.text = EngagingChoiceName.poweredBy.rawValue
         poweredBy.textColor = UIColor.poweredByColor
-        poweredBy.font = UIFont(name: "HelveticaNeue-LightItalic", size: 8.0)
+        if  UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-LightItalic", fontExtension: "ttf") {
+            poweredBy.font = UIFont(name: "OpenSans-LightItalic", size: 8.0)
+        } else {
+            poweredBy.font = UIFont(name: "HelveticaNeue-LightItalic", size: 8.0)
+        }
+        
         self.addSubview(poweredBy)
     }
     
@@ -133,6 +138,34 @@ public class ECPoweredByView: UIView {
     }
 }
 
-private enum EngagingName:String {
+enum EngagingChoiceName:String {
     case poweredBy = "Powered by"
+}
+enum EngagingChoiceGridCell:CGFloat {
+    case cellHeight = 200
+}
+
+extension UIFont {
+    static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) -> Bool {
+        guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension) else {
+            fatalError("Couldn't find font \(fontName)")
+        }
+        
+        guard let fontDataProvider = CGDataProvider(url: fontURL as CFURL) else {
+            fatalError("Couldn't load data from the font \(fontName)")
+        }
+        
+        guard let font = CGFont(fontDataProvider) else {
+            fatalError("Couldn't create font from data")
+        }
+        
+        var error: Unmanaged<CFError>?
+        let success = CTFontManagerRegisterGraphicsFont(font, &error)
+        guard success else {
+            print("Error registering font: maybe it was already registered.")
+            return false
+        }
+        
+        return true
+    }
 }

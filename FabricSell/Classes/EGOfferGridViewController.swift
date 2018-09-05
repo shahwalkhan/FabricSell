@@ -47,7 +47,7 @@ extension Bundle {
 
 extension EGOfferGridViewController:UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,6 +62,11 @@ extension EGOfferGridViewController:UITableViewDataSource {
 }
 extension EGOfferGridViewController:UITableViewDelegate {
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return EngagingChoiceGridCell.cellHeight.rawValue
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailGridViewController = EGOfferGridDetailViewController(nibName: "\(EGOfferGridDetailViewController.self)", bundle: Bundle.bundle)
+        self.show(detailGridViewController, sender: self)
     }
 }
