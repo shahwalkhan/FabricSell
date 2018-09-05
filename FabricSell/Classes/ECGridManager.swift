@@ -11,11 +11,11 @@ public class ECGridManager: NSObject {
     
     public static let shared = ECGridManager()
     fileprivate static var secretKey:String?
-    internal var getSecretKey:String {
-        if (ECGridManager.secretKey != nil) {
-            return ECGridManager.secretKey!
+    internal var getSecretKey:String? {
+        if (ECGridManager.secretKey == nil) {
+            print("Secret key is not provided, Please set Secret key in ECGrimanager.config(secretKey key:String) and add this line of code in didFinishLaunchingWithOptions")
         }
-        fatalError("Secret key is not provided, Please set Secret key in ECGrimanager.config(secretKey key:String) and add this line of code in didFinishLaunchingWithOptions")
+        return ECGridManager.secretKey
     }
     
     // MARK: - Config Key

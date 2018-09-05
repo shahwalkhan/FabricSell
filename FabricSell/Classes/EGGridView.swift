@@ -72,7 +72,7 @@ open class EGGridView: UIView {
         //        poweredBy Engaging Choice icon | default it's invisible
         powerByThumImageView = UIImageView(frame: CGRect.zero)
         powerByThumImageView.backgroundColor = UIColor(red: 61/255, green: 106/255, blue: 211/255, alpha: 1.0)
-        powerByThumImageView.contentMode = .scaleAspectFill
+        powerByThumImageView.contentMode = .center
         powerByThumImageView.image = UIImage.poweredByIcon
         powerByThumImageView.isHidden = !enabledPowerBy
         self.addSubview(powerByThumImageView)

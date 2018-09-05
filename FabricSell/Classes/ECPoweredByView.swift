@@ -32,7 +32,6 @@ public class ECPoweredByView: UIView {
         
         // Since awakeFromNib can be called multiple times we check to see if setup routines have been called already for safety
         if !isSetup {
-            _ = ECGridManager.shared.getSecretKey
             self.backgroundColor = UIColor.white
             setup()
             setupConstraints()
