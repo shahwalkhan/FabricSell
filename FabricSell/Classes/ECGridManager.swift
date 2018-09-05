@@ -33,7 +33,7 @@ public class ECGridManager: NSObject {
      */
     public func showOfferList(view controller:UIViewController, email:String) {
         let gridViewController = EGOfferGridViewController(nibName: "\(EGOfferGridViewController.self)", bundle: Bundle.bundle)
-        controller.show(gridViewController, sender: controller)
+        controller.present(gridViewController, animated: true, completion: nil)
     }
 
     
