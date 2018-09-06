@@ -36,15 +36,57 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pJ-fs-uDZ" customClass="OverlayView" customModule="FabricSell" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="483" height="190"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uber Ride Offer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWo-1k-77N">
-                        <rect key="frame" x="10" y="25" width="353" height="20"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ci-jd-ecD">
+                        <rect key="frame" x="10" y="15" width="463" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uber Ride Offer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWo-1k-77N">
+                                <rect key="frame" x="0.0" y="0.0" width="128.5" height="40"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-Je-ZvT">
+                                <rect key="frame" x="363" y="0.0" width="100" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="firstBaseline" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QRb-k5-xIt">
+                                        <rect key="frame" x="10" y="0.0" width="80" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-H8-Sdi">
+                                                <rect key="frame" x="0.0" y="5" width="48.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="22"/>
+                                                <color key="textColor" red="0.23921568627450979" green="0.41568627450980389" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12l-qg-GFn">
+                                                <rect key="frame" x="52.5" y="13.5" width="27.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                <color key="textColor" red="0.23921568627450979" green="0.41568627450980389" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8901960784313725" green="0.91764705882352937" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QRb-k5-xIt" firstAttribute="leading" secondItem="Mmk-Je-ZvT" secondAttribute="leading" constant="10" id="AHT-LU-ziC"/>
+                                    <constraint firstAttribute="height" constant="40" id="Hay-FS-Axn"/>
+                                    <constraint firstAttribute="trailing" secondItem="QRb-k5-xIt" secondAttribute="trailing" constant="10" id="Kmz-mv-rNU"/>
+                                    <constraint firstItem="QRb-k5-xIt" firstAttribute="top" secondItem="Mmk-Je-ZvT" secondAttribute="top" id="UWa-ht-hDt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="eHj-4F-ECF"/>
+                                    <constraint firstAttribute="width" priority="750" constant="100" id="oFo-bm-6c9"/>
+                                    <constraint firstAttribute="bottom" secondItem="QRb-k5-xIt" secondAttribute="bottom" constant="5" id="yfC-9O-Awq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="EEm-dW-gHb"/>
+                            <constraint firstAttribute="height" constant="40" id="mJE-97-55r"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyG-3r-XtA">
                         <rect key="frame" x="410" y="149" width="61" height="30"/>
                         <constraints>
@@ -56,64 +98,27 @@
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
-                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-Je-ZvT">
-                        <rect key="frame" x="373" y="15" width="100" height="40"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QRb-k5-xIt">
-                                <rect key="frame" x="10" y="0.0" width="80" height="40"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-H8-Sdi">
-                                        <rect key="frame" x="0.0" y="5" width="47.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="22"/>
-                                        <color key="textColor" red="0.23921568627450979" green="0.41568627450980389" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12l-qg-GFn">
-                                        <rect key="frame" x="52.5" y="10.5" width="27.5" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
-                                        <color key="textColor" red="0.23921568627450979" green="0.41568627450980389" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.8901960784313725" green="0.91764705882352937" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="QRb-k5-xIt" firstAttribute="leading" secondItem="Mmk-Je-ZvT" secondAttribute="leading" constant="10" id="AHT-LU-ziC"/>
-                            <constraint firstAttribute="height" constant="40" id="Hay-FS-Axn"/>
-                            <constraint firstAttribute="trailing" secondItem="QRb-k5-xIt" secondAttribute="trailing" constant="10" id="Kmz-mv-rNU"/>
-                            <constraint firstItem="QRb-k5-xIt" firstAttribute="top" secondItem="Mmk-Je-ZvT" secondAttribute="top" id="UWa-ht-hDt"/>
-                            <constraint firstAttribute="width" constant="100" id="oFo-bm-6c9"/>
-                            <constraint firstAttribute="bottom" secondItem="QRb-k5-xIt" secondAttribute="bottom" id="yfC-9O-Awq"/>
-                        </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="20"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="8Ci-jd-ecD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8Mj-gx-yp6"/>
                     <constraint firstItem="okN-5Q-Ubg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AUc-mg-YHk"/>
                     <constraint firstAttribute="trailing" secondItem="okN-5Q-Ubg" secondAttribute="trailing" id="Ak9-MV-Qsn"/>
                     <constraint firstItem="okN-5Q-Ubg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D9W-NO-eja"/>
                     <constraint firstAttribute="bottom" secondItem="okN-5Q-Ubg" secondAttribute="bottom" id="GLN-ca-5zj"/>
-                    <constraint firstItem="EWo-1k-77N" firstAttribute="centerY" secondItem="Mmk-Je-ZvT" secondAttribute="centerY" id="J11-Je-nf2"/>
                     <constraint firstItem="5pJ-fs-uDZ" firstAttribute="width" secondItem="okN-5Q-Ubg" secondAttribute="width" id="Jmc-fG-ENK"/>
-                    <constraint firstAttribute="trailing" secondItem="Mmk-Je-ZvT" secondAttribute="trailing" constant="10" id="KnJ-av-bGG"/>
+                    <constraint firstAttribute="trailing" secondItem="8Ci-jd-ecD" secondAttribute="trailing" constant="10" id="Kn8-Ut-Ll0"/>
                     <constraint firstItem="5pJ-fs-uDZ" firstAttribute="leading" secondItem="okN-5Q-Ubg" secondAttribute="leading" id="OQP-E3-bpR"/>
-                    <constraint firstItem="Mmk-Je-ZvT" firstAttribute="leading" secondItem="EWo-1k-77N" secondAttribute="trailing" constant="10" id="SPt-aV-vpY"/>
                     <constraint firstItem="5pJ-fs-uDZ" firstAttribute="top" secondItem="okN-5Q-Ubg" secondAttribute="top" id="ZXK-uY-1SZ"/>
+                    <constraint firstItem="8Ci-jd-ecD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bB7-MJ-ZBi"/>
                     <constraint firstItem="5pJ-fs-uDZ" firstAttribute="height" secondItem="okN-5Q-Ubg" secondAttribute="height" id="bF1-Wd-ooO"/>
                     <constraint firstAttribute="trailing" secondItem="qyG-3r-XtA" secondAttribute="trailing" constant="12.6" id="jlP-Ag-od0"/>
-                    <constraint firstItem="EWo-1k-77N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mtM-1f-3Uc"/>
-                    <constraint firstItem="Mmk-Je-ZvT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="o4d-Xf-WcX"/>
                     <constraint firstAttribute="bottom" secondItem="qyG-3r-XtA" secondAttribute="bottom" constant="10" id="whu-OM-RC7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bannderImageView" destination="okN-5Q-Ubg" id="gzT-pM-mN1"/>
+                <outlet property="offerOff" destination="12l-qg-GFn" id="0VI-vJ-hKr"/>
                 <outlet property="offerPercentage" destination="VxS-H8-Sdi" id="fBN-gB-JIh"/>
                 <outlet property="offerTitle" destination="EWo-1k-77N" id="itp-ix-eDl"/>
             </connections>

@@ -9,15 +9,20 @@ import UIKit
 
 public class EGOfferGridViewController: UIViewController {
 
+    @IBOutlet weak var headerTitle: UILabel!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     fileprivate let gridModelView = ECOfferViewModel()
 
     override open func viewDidLoad() {
         super.viewDidLoad()
+        _ = UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-SemiBold", fontExtension: "ttf")
+        headerTitle.font = UIFont(name: "OpenSans-SemiBold", size: 20)
         tableView.register(UINib(nibName: "\(EGOfferGridTableViewCell.self)", bundle: Bundle.bundle), forCellReuseIdentifier: "\(EGOfferGridTableViewCell.self)")
         tableView.dataSource = self
         tableView.delegate = self
         gridModelView.fetchOfferList {
+            self.activityIndicatorView.stopAnimating()
             self.tableView.reloadData()
         }
     }
@@ -63,7 +68,7 @@ extension EGOfferGridViewController:UITableViewDataSource {
             cell.bannderImageView.startAnimating()
             cell.bannderImageView.sd_setImage(with: url, completed: nil)
         }
-        cell.offerTitle.text = gridModelView.offerList[indexPath.row].offerTitle
+        cell.setContent(model: gridModelView.offerList[indexPath.row])
         return cell
     }
 }
@@ -73,7 +78,7 @@ extension EGOfferGridViewController:UITableViewDelegate {
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailGridViewController = EGOfferGridDetailViewController(nibName: "\(EGOfferGridDetailViewController.self)", bundle: Bundle.bundle)
-        self.show(detailGridViewController, sender: self)
+//        let detailGridViewController = EGOfferGridDetailViewController(nibName: "\(EGOfferGridDetailViewController.self)", bundle: Bundle.bundle)
+//        self.show(detailGridViewController, sender: self)
     }
 }

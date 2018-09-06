@@ -54,12 +54,8 @@ public class ECPoweredByView: UIView {
         poweredBy = UILabel(frame: CGRect.zero)
         poweredBy.text = EngagingChoiceName.poweredBy.rawValue
         poweredBy.textColor = UIColor.poweredByColor
-        if  UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-LightItalic", fontExtension: "ttf") {
-            poweredBy.font = UIFont(name: "OpenSans-LightItalic", size: 8.0)
-        } else {
-            poweredBy.font = UIFont(name: "HelveticaNeue-LightItalic", size: 8.0)
-        }
-        
+        _ = UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-LightItalic", fontExtension: "ttf")
+        poweredBy.font = UIFont(name: "OpenSans-LightItalic", size: 8.0)
         self.addSubview(poweredBy)
     }
     
@@ -164,7 +160,7 @@ extension UIFont {
         var error: Unmanaged<CFError>?
         let success = CTFontManagerRegisterGraphicsFont(font, &error)
         guard success else {
-            print("Error registering font: maybe it was already registered.")
+            //print("Error registering font: maybe it was already registered.")
             return false
         }
         

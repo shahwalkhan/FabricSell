@@ -9,9 +9,16 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGOfferGridViewController" customModule="FabricSell" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicatorView" destination="HKY-8y-bKD" id="Wte-Jx-FXE"/>
+                <outlet property="headerTitle" destination="6sv-MD-tlP" id="cLV-y9-B6p"/>
                 <outlet property="tableView" destination="uo3-6A-ekv" id="piv-sP-4db"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,29 +32,49 @@
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HKY-8y-bKD">
+                    <rect key="frame" x="178" y="324" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Y6h-FI-69i"/>
+                        <constraint firstAttribute="height" constant="20" id="cdI-zw-woe"/>
+                    </constraints>
+                    <color key="color" red="0.23921568630000001" green="0.41568627450000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBn-gA-NSI">
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu7-zK-y4K">
-                            <rect key="frame" x="10" y="0.0" width="44" height="44"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu7-zK-y4K">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="PE2-Pc-vto"/>
                                 <constraint firstAttribute="width" constant="44" id="u1s-oW-5gC"/>
                             </constraints>
-                            <state key="normal" title="Close">
+                            <state key="normal" image="whiteCrossIcon">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
                                 <action selector="closeController:" destination="-1" eventType="touchUpInside" id="hyt-Pk-wml"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Offer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sv-MD-tlP">
+                            <rect key="frame" x="10" y="11.5" width="355" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="vsV-jv-Vb6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                            <color key="textColor" red="0.89019607840000003" green="0.91764705879999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.094117647058823528" green="0.44705882352941173" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="bu7-zK-y4K" secondAttribute="bottom" id="55d-bZ-knm"/>
+                        <constraint firstItem="6sv-MD-tlP" firstAttribute="centerY" secondItem="tBn-gA-NSI" secondAttribute="centerY" id="WGj-Hk-sDd"/>
                         <constraint firstAttribute="height" constant="44" id="ZSu-XL-4O9"/>
-                        <constraint firstItem="bu7-zK-y4K" firstAttribute="leading" secondItem="tBn-gA-NSI" secondAttribute="leading" constant="10" id="kBp-df-N6J"/>
+                        <constraint firstItem="bu7-zK-y4K" firstAttribute="leading" secondItem="tBn-gA-NSI" secondAttribute="leading" id="kBp-df-N6J"/>
+                        <constraint firstItem="6sv-MD-tlP" firstAttribute="leading" secondItem="tBn-gA-NSI" secondAttribute="leading" constant="10" id="nAl-PG-OQn"/>
+                        <constraint firstAttribute="trailing" secondItem="6sv-MD-tlP" secondAttribute="trailing" constant="10" id="xVI-RN-6W6"/>
                     </constraints>
                 </view>
             </subviews>
@@ -55,6 +82,8 @@
             <constraints>
                 <constraint firstItem="uo3-6A-ekv" firstAttribute="top" secondItem="tBn-gA-NSI" secondAttribute="bottom" id="63Q-hm-ne2"/>
                 <constraint firstItem="tBn-gA-NSI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9jA-x0-Pax"/>
+                <constraint firstItem="HKY-8y-bKD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fig-Do-6rk"/>
+                <constraint firstItem="HKY-8y-bKD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MfT-Q3-6xw"/>
                 <constraint firstItem="tBn-gA-NSI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="U09-sE-s8S"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uo3-6A-ekv" secondAttribute="trailing" id="XGb-nd-lpU"/>
                 <constraint firstItem="tBn-gA-NSI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ywa-QK-Z4a"/>
@@ -65,4 +94,7 @@
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="whiteCrossIcon" width="25" height="25"/>
+    </resources>
 </document>

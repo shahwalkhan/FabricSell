@@ -8,7 +8,6 @@
 import UIKit
 
 public class ECGridManager: NSObject {
-    
     public static let shared = ECGridManager()
     fileprivate static var secretKey:String?
     internal var getSecretKey:String? {

@@ -14,7 +14,7 @@ class ECOfferViewModel {
     internal func fetchOfferList(callback:@escaping () -> Void)  {
         // String url address for offerlist 
         let stringURL = EngagingChoiceAPI.offerListURL.rawValue
-        // Make sure URl is nil before making request to server
+        // Make sure URL is nil before making request to server
         guard let url = URL(string: stringURL) else { return }
         
         // Download data from server

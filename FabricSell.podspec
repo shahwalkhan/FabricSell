@@ -38,7 +38,7 @@ In detail description I dont have anything to describe about this project
    #  s.resources = 'FabricSell/Resources/*.ttf'
 #   s.resources = ['FabricSell/Resources/Pod.bundle']
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit'
    s.dependency 'Alamofire'
    s.dependency 'SDWebImage'
 end

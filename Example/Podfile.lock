@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
-  - FabricSell (1.0.4):
+  - FabricSell (1.0.5):
     - Alamofire
     - SDWebImage
   - SDWebImage (4.4.2):
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  FabricSell: 907f1a977d8dc28cfdcdad5b1699a184f365bb48
+  FabricSell: 35867690b5762ea95f8c39c421a59a7953edfc2c
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
 PODFILE CHECKSUM: 0116e8c80a328c120825b33136b0f4eda8892804
