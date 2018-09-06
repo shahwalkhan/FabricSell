@@ -10,13 +10,16 @@ import UIKit
 public class EGOfferGridViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+    fileprivate let gridModelView = ECOfferViewModel()
+
     override open func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "\(EGOfferGridTableViewCell.self)", bundle: Bundle.bundle), forCellReuseIdentifier: "\(EGOfferGridTableViewCell.self)")
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.reloadData()
+        gridModelView.fetchOfferList {
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func closeController(_ sender: Any) {
@@ -47,7 +50,7 @@ extension Bundle {
 
 extension EGOfferGridViewController:UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return gridModelView.offerList.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,7 +59,11 @@ extension EGOfferGridViewController:UITableViewDataSource {
         }
         cell.bannderImageView.image = nil
         cell.bannderImageView.startAnimating()
-        cell.bannderImageView.sd_setImage(with: URL(string: "https://media.wmagazine.com/photos/584b0d43db73e24512ebf4ff/4:3/w_1536/GettyImages-628353490.jpg")!, completed: nil)
+        if let baseURL = gridModelView.baseURL, let fileURL = gridModelView.offerList[indexPath.row].fileName, let url = URL(string: "\(baseURL)\(fileURL)")  {
+            cell.bannderImageView.startAnimating()
+            cell.bannderImageView.sd_setImage(with: url, completed: nil)
+        }
+        cell.offerTitle.text = gridModelView.offerList[indexPath.row].offerTitle
         return cell
     }
 }

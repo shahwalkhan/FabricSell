@@ -144,7 +144,9 @@ enum EngagingChoiceName:String {
 enum EngagingChoiceGridCell:CGFloat {
     case cellHeight = 200
 }
-
+enum EngagingChoiceAPI:String {
+    case offerListURL = "https://funn-qa.kiwireader.com/publisherapi/offer-list"
+}
 extension UIFont {
     static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) -> Bool {
         guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension) else {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FabricSell'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'This is all about giving and sharing and taking and receiving.'
   s.swift_version    = '4.0'
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,6 @@ In detail description I dont have anything to describe about this project
 #   s.resources = ['FabricSell/Resources/Pod.bundle']
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'Alamofire', '~> 4.7'
+   s.dependency 'Alamofire'
    s.dependency 'SDWebImage'
 end

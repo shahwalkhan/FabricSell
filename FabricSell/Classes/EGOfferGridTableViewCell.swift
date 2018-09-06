@@ -10,6 +10,8 @@ import UIKit
 open class EGOfferGridTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bannderImageView: UIImageView!
+    @IBOutlet weak var offerTitle: UILabel!
+    @IBOutlet weak var offerPercentage: UILabel!
     override open func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

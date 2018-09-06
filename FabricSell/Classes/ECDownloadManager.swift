@@ -14,8 +14,19 @@ class ECDownloadManager: NSObject {
     
     static let shared = ECDownloadManager()
     
-    func downloadImage(with url:URL, success:@escaping(_ data:Data) -> Void, failed:@escaping (_ error:Error?) -> Void) {
-        
-        
+    func downloadData(with url:URL, success:@escaping(_ data:ECOfferModel?) -> Void, failed:@escaping (_ error:Error?) -> Void) {
+        Alamofire.request(url).responseJSON { response in
+            if let data = response.data {
+                do {
+                    let jsonDecoder = JSONDecoder()
+                    let model = try jsonDecoder.decode(ECOfferModel.self, from: data)
+                    success(model)
+                }
+                catch let error  {
+                    failed(error)
+                }
+            }
+        }
+
     }
 }

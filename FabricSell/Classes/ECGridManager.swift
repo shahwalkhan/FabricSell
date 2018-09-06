@@ -31,7 +31,7 @@ public class ECGridManager: NSObject {
         Provide viewController to open OfferList View
         Email is mandotary to show Offer List View Cotroller
      */
-    public func showOfferList(view controller:UIViewController, email:String) {
+    public static func showOfferList(view controller:UIViewController, email:String) {
         let gridViewController = EGOfferGridViewController(nibName: "\(EGOfferGridViewController.self)", bundle: Bundle.bundle)
         controller.present(gridViewController, animated: true, completion: nil)
     }
