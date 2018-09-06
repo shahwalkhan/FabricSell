@@ -14,6 +14,7 @@ class OverlayView: UIView {
         super.init(frame: frame)
         if self.setup {
             applyGradient()
+            NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         }
     }
     required init?(coder aDecoder: NSCoder) {
@@ -21,13 +22,24 @@ class OverlayView: UIView {
         if !setup {
             self.setup = true
             applyGradient()
+            NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         }
     }
     
     func applyGradient() {
+        self.layer.sublayers = nil
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = [UIColor.black.withAlphaComponent(0.4).cgColor, UIColor.clear.cgColor]
         self.layer.addSublayer(gradient)
+    }
+    
+    @objc func deviceRotated(){
+        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+            applyGradient()
+        }
+        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+            applyGradient()
+        }
     }
 }

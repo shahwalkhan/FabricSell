@@ -18,27 +18,24 @@ public class EGOfferGridViewController: UIViewController {
         super.viewDidLoad()
         _ = UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-SemiBold", fontExtension: "ttf")
         headerTitle.font = UIFont(name: "OpenSans-SemiBold", size: 20)
+        
+        // Register tableView with Cell identifier
         tableView.register(UINib(nibName: "\(EGOfferGridTableViewCell.self)", bundle: Bundle.bundle), forCellReuseIdentifier: "\(EGOfferGridTableViewCell.self)")
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // Get data from ViewModel
         gridModelView.fetchOfferList {
             self.activityIndicatorView.stopAnimating()
             self.tableView.reloadData()
         }
     }
     
+    // MARK: - close View Button Action
     @IBAction func closeController(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    private var topViewController:UIViewController? {
-        let controller = UIApplication.shared.keyWindow?.rootViewController
-        if let presentedVC = controller?.presentedViewController {
-            return presentedVC
-        }
-        return controller
-    }
-
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
