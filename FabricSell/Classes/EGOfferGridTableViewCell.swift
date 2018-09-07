@@ -21,8 +21,14 @@ open class EGOfferGridTableViewCell: UITableViewCell {
     
     func setContent(model: Offers) {
         offerTitle.text = model.offerTitle
-//        offerOff.isHidden = true
         offerPercentage.text = model.discount
+        if let type = model.discountType {
+            if type == 1 {
+                offerOff.isHidden = true
+            } else {
+                offerOff.isHidden = false
+            }
+        }
     }
 
     override open func setSelected(_ selected: Bool, animated: Bool) {

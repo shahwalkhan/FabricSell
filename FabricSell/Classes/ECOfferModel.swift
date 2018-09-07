@@ -46,6 +46,7 @@ struct Offers: Codable {
     var fileName: String?
     var fileType: Int?
     var discount: String?
+    var discountType: Int?
     private enum CodingKeys: String, CodingKey {
         case id
         case tracingNumber = "tracking_number"
@@ -63,5 +64,6 @@ struct Offers: Codable {
         case fileName = "file_name"
         case fileType = "file_type"
         case discount = "discount"
+        case discountType = "discount_type"
     }
 }
