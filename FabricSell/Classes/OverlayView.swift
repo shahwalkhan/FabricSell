@@ -36,7 +36,7 @@ class OverlayView: UIView {
     
     @objc func deviceRotated(){
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
-                self?.applyGradient()
+                applyGradient()
 //        }
         
     }
