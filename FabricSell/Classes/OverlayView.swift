@@ -35,12 +35,10 @@ class OverlayView: UIView {
     }
     
     @objc func deviceRotated(){
-        Thread.sleep(forTimeInterval: 2)
-        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
-            applyGradient()
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+                self?.applyGradient()
         }
-        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
-            applyGradient()
-        }
+        
     }
 }
