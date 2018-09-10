@@ -12,10 +12,14 @@ open class EGOfferGridTableViewCell: UITableViewCell {
     @IBOutlet weak var bannderImageView: UIImageView!
     @IBOutlet weak var offerTitle: UILabel!
     @IBOutlet weak var offerPercentage: UILabel!
+    @IBOutlet weak var subTitle: UILabel!
     @IBOutlet weak var offerOff: UILabel!
+    @IBOutlet weak var titleHeightContraint: NSLayoutConstraint!
     override open func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        offerTitle.numberOfLines = 0;
+        offerTitle.sizeToFit()
         loadFont()
     }
     
@@ -23,13 +27,39 @@ open class EGOfferGridTableViewCell: UITableViewCell {
     func setContent(model: Offers) {
         offerTitle.text = model.offerTitle
         offerPercentage.text = model.discount
-        if let type = model.discountType {
-            if type == 1 {
-                offerOff.isHidden = true
-            } else {
-                offerOff.isHidden = false
-            }
+        if model.discountType == 1 {
+            offerOff.isHidden = true
+        } else {
+            offerOff.isHidden = false
         }
+        
+        if let offerEndDate = convertStringToDate(date: model.offerEndDate) {
+            subTitle.text = "\(EngagingChoiceOfferText.validTill.rawValue) \(String(describing: offerEndDate))"
+        }
+        
+        //if let offerText = model.offerTitle {
+         
+            
+//            if offerText.count > 28 {
+//                titleHeightContraint.constant = 60
+//            } else {
+//                titleHeightContraint.constant = 24
+//            }
+        //}
+       
+    }
+    
+    func convertStringToDate(date:String) -> String? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = FormatterDate.YYMdHHm.rawValue
+        
+        let mmdyFormatter = DateFormatter()
+        mmdyFormatter.dateFormat = FormatterDate.MMDY.rawValue
+        
+        if let date = formatter.date(from: "\(date) 00:00:00") {
+            return mmdyFormatter.string(from: date)
+        }
+        return nil
     }
     
      // MARK: - Load Fonts

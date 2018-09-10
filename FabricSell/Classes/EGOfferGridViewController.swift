@@ -42,6 +42,14 @@ public class EGOfferGridViewController: UIViewController {
     }
 }
 
+extension Bundle {
+    static var bundle:Bundle {
+        let podBundle = Bundle(for: EGOfferGridViewController.self)
+        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
+        return Bundle(url: bundleURL!)!
+    }
+}
+
 extension EGOfferGridViewController:UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gridModelView.offerList.count
@@ -52,10 +60,8 @@ extension EGOfferGridViewController:UITableViewDataSource {
             fatalError("Expected `\(EGOfferGridTableViewCell.self)` type for reuseIdentifier \(EGOfferGridTableViewCell.self).")
         }
         cell.bannderImageView.image = nil
-        cell.bannderImageView.startAnimating()
         if let baseURL = gridModelView.baseURL, let fileURL = gridModelView.offerList[indexPath.row].fileName, let url = URL(string: "\(baseURL)\(fileURL)")  {
-            cell.bannderImageView.startAnimating()
-            cell.bannderImageView.sd_setImage(with: url, completed: nil)
+            cell.bannderImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "CellShimmer"), options: .highPriority, completed: nil)
         }
         cell.setContent(model: gridModelView.offerList[indexPath.row])
         return cell

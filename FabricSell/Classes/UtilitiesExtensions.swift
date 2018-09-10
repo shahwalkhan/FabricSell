@@ -16,6 +16,15 @@ enum EngagingChoiceGridCell:CGFloat {
 enum EngagingChoiceAPI:String {
     case offerListURL = "https://funn-qa.kiwireader.com/publisherapi/offer-list"
 }
+
+enum FormatterDate:String {
+    case MMDY = "MMM dd, yyyy"
+    case YYMdHHm = "yyyy-MM-dd HH:mm:ss"
+}
+
+enum EngagingChoiceOfferText:String {
+    case validTill = "Valid Till"
+}
 extension UIFont {
     static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) -> Bool {
         guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension) else {
@@ -55,10 +64,10 @@ extension UIColor {
     }
 }
 
-extension Bundle {
-    static var bundle:Bundle {
-        let podBundle = Bundle(for: EGOfferGridViewController.self)
-        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
-        return Bundle(url: bundleURL!)!
-    }
-}
+//extension Bundle {
+//    static var bundle:Bundle {
+//        let podBundle = Bundle(for: EGOfferGridViewController.self)
+//        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
+//        return Bundle(url: bundleURL!)!
+//    }
+//}

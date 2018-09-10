@@ -29,8 +29,8 @@ struct Offers: Codable {
     var tracingNumber: String?
     var offerTitle: String?
     var offerDescription: String?
-    var offerStartDate: String?
-    var offerEndDate: String?
+    var offerStartDate: String
+    var offerEndDate: String
     var offerURL: String?
     var offerBudget: String?
     var priceEngagement: String?
@@ -41,7 +41,7 @@ struct Offers: Codable {
     var fileName: String?
     var fileType: Int?
     var discount: String?
-    var discountType: Int?
+    var discountType: Int
     private enum CodingKeys: String, CodingKey {
         case id
         case tracingNumber = "tracking_number"
