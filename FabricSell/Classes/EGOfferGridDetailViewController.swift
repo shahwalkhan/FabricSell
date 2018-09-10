@@ -18,6 +18,7 @@ class EGOfferGridDetailViewController: UIViewController {
         coverImageView.sd_setImage(with: URL(string:"https://i2.wp.com/beebom.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg?resize=640%2C426"), completed: nil)
     }
 
+     // MARK: - Skip Action
     @IBAction func skip(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }

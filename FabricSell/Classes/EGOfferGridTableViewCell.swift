@@ -19,6 +19,7 @@ open class EGOfferGridTableViewCell: UITableViewCell {
         loadFont()
     }
     
+     // MARK: - Set details
     func setContent(model: Offers) {
         offerTitle.text = model.offerTitle
         offerPercentage.text = model.discount
@@ -30,13 +31,8 @@ open class EGOfferGridTableViewCell: UITableViewCell {
             }
         }
     }
-
-    override open func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+     // MARK: - Load Fonts
     private func loadFont() {
         _ = UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-SemiBold", fontExtension: "ttf")
         _ = UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-Bold", fontExtension: "ttf")

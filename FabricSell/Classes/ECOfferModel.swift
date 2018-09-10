@@ -10,11 +10,6 @@ import UIKit
 struct ECOfferModel: Codable {
     var pagination: Pagination?
     var data: [Offers]?
-//    var detail:String?
-//    var serverDateTime:String?
-//    enum CodingKeys: String, CodingKey {
-//        case serverDateTime = "server_datetime"
-//    }
 }
 struct Pagination: Codable {
     var count: Int?

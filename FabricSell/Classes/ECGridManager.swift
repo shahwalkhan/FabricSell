@@ -8,8 +8,16 @@
 import UIKit
 
 public class ECGridManager: NSObject {
+    // MARK: - Class shared instance
     public static let shared = ECGridManager()
+    
+    // MARK: - Private var
     fileprivate static var secretKey:String?
+    
+     // MARK: - Make init private
+    private override init() {}
+    
+     // MARK: - Get secret key
     internal var getSecretKey:String? {
         if (ECGridManager.secretKey == nil) {
             print("Secret key is not provided, Please set Secret key in ECGrimanager.config(secretKey key:String) and add this line of code in didFinishLaunchingWithOptions")
@@ -19,7 +27,7 @@ public class ECGridManager: NSObject {
     
     // MARK: - Config Key
     /**
-        Add your secret key here
+        Static method for set secret key
      */
     public static func config(secretKey key:String) {
         ECGridManager.secretKey = key

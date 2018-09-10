@@ -188,16 +188,4 @@ open class EGGridView: UIView {
     }
 }
 
-extension UIImage {
-    static var poweredByIcon:UIImage? {
-        return UIImage(named: "icon", in: Bundle.bundle, compatibleWith: nil)
-    }
-    static var poweredByWithText:UIImage? {
-        return UIImage(named: "logoWithEngagingChoice", in: Bundle.bundle, compatibleWith: nil)
-    }
-}
-extension UIColor {
-    static var poweredByColor:UIColor {
-        return UIColor(red: 52/255, green: 62/255, blue: 74/255, alpha: 1.0)
-    }
-}
+

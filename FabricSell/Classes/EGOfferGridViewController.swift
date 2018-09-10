@@ -42,14 +42,6 @@ public class EGOfferGridViewController: UIViewController {
     }
 }
 
-extension Bundle {
-    static var bundle:Bundle {
-        let podBundle = Bundle(for: EGOfferGridViewController.self)
-        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
-        return Bundle(url: bundleURL!)!
-    }
-}
-
 extension EGOfferGridViewController:UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gridModelView.offerList.count
