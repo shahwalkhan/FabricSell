@@ -88,9 +88,9 @@
 		CC46026CB5C019EC03F7DA3703DADB59 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E6712458C453FE343533428743D08 /* SDImageCache.m */; };
 		CCCC1CBF0DFBB6A87BEE60467FFC2C8C /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84AC6F63DE457DC21234F5E5B6781179 /* OpenSans-Regular.ttf */; };
 		CDD72CAB9B94CB264E85CA22A98B7C4B /* Pods-FabricSell_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F863710FCC8C120F74C937B213F34D /* Pods-FabricSell_Tests-dummy.m */; };
+		D63150E92146449000E1E7F3 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63150E82146448F00E1E7F3 /* UtilitiesExtensions.swift */; };
 		D6D00A8321463C3B00DACD00 /* ECOfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D00A8221463C3B00DACD00 /* ECOfferModel.swift */; };
 		D6D00A8521463C4900DACD00 /* ECOfferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D00A8421463C4900DACD00 /* ECOfferViewModel.swift */; };
-		D6D00A8721463E9700DACD00 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D00A8621463E9700DACD00 /* UtilitiesExtensions.swift */; };
 		D6D00A8A214640A700DACD00 /* ECGridManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D00A89214640A700DACD00 /* ECGridManager.swift */; };
 		D6D00A8C214640AE00DACD00 /* ECDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D00A8B214640AE00DACD00 /* ECDownloadManager.swift */; };
 		D6D00A91214640FF00DACD00 /* EGOfferGridTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D00A8F214640FF00DACD00 /* EGOfferGridTableViewCell.xib */; };
@@ -292,10 +292,10 @@
 		D29E6712458C453FE343533428743D08 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		D4638BB9A4285B084C71F6F9759BB0A8 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		D5B12039EAE679431584AE518400CE93 /* Pods-FabricSell_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FabricSell_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D63150E82146448F00E1E7F3 /* UtilitiesExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UtilitiesExtensions.swift; path = FabricSell/Classes/UtilitiesExtensions.swift; sourceTree = "<group>"; };
 		D6715C17408730A181DCA250E27C0D7C /* FabricSell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FabricSell.modulemap; sourceTree = "<group>"; };
 		D6D00A8221463C3B00DACD00 /* ECOfferModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECOfferModel.swift; path = FabricSell/Classes/ECOfferModel.swift; sourceTree = "<group>"; };
 		D6D00A8421463C4900DACD00 /* ECOfferViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECOfferViewModel.swift; path = FabricSell/Classes/ECOfferViewModel.swift; sourceTree = "<group>"; };
-		D6D00A8621463E9700DACD00 /* UtilitiesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesExtensions.swift; sourceTree = "<group>"; };
 		D6D00A89214640A700DACD00 /* ECGridManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECGridManager.swift; path = FabricSell/Classes/ECGridManager.swift; sourceTree = "<group>"; };
 		D6D00A8B214640AE00DACD00 /* ECDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECDownloadManager.swift; path = FabricSell/Classes/ECDownloadManager.swift; sourceTree = "<group>"; };
 		D6D00A8F214640FF00DACD00 /* EGOfferGridTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EGOfferGridTableViewCell.xib; path = FabricSell/Classes/EGOfferGridTableViewCell.xib; sourceTree = "<group>"; };
@@ -709,7 +709,7 @@
 		F06897446D15ADE78EE68165214AAD29 /* FabricSell */ = {
 			isa = PBXGroup;
 			children = (
-				D6D00A8621463E9700DACD00 /* UtilitiesExtensions.swift */,
+				D63150E82146448F00E1E7F3 /* UtilitiesExtensions.swift */,
 				D6D00A882146408400DACD00 /* Manager */,
 				D6D00A8021463B0B00DACD00 /* Model */,
 				D6D00A8121463B1200DACD00 /* ViewModel */,
@@ -1036,8 +1036,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D00A92214640FF00DACD00 /* EGOfferGridTableViewCell.swift in Sources */,
-				D6D00A8721463E9700DACD00 /* UtilitiesExtensions.swift in Sources */,
 				4764D5AA2AAEF87969D7BD528D0F1EF0 /* ECPoweredByView.swift in Sources */,
+				D63150E92146449000E1E7F3 /* UtilitiesExtensions.swift in Sources */,
 				4447219AFA617C7F73D165995BD22304 /* EGGridView.swift in Sources */,
 				D6D00A8A214640A700DACD00 /* ECGridManager.swift in Sources */,
 				D6D00A8C214640AE00DACD00 /* ECDownloadManager.swift in Sources */,
