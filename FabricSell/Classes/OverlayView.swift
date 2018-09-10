@@ -30,15 +30,14 @@ class OverlayView: UIView {
         self.layer.sublayers = nil
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
-        gradient.colors = [UIColor.black.withAlphaComponent(0.4).cgColor, UIColor.clear.cgColor]
+        gradient.colors = [UIColor.black.withAlphaComponent(0.3).cgColor, UIColor.clear.cgColor]
         self.layer.addSublayer(gradient)
     }
     
     @objc func deviceRotated(){
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
                 self?.applyGradient()
-        }
+//        }
         
     }
 }
