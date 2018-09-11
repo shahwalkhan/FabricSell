@@ -12,16 +12,22 @@ class OverlayView: UIView {
     private var setup = false
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        if self.setup {
+        if !self.setup {
+            self.setup = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+                self?.applyGradient()
+            }
             applyGradient()
             NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         }
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        if !setup {
+        if !self.setup {
             self.setup = true
-            applyGradient()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+                self?.applyGradient()
+            }
             NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         }
     }
@@ -30,14 +36,11 @@ class OverlayView: UIView {
         self.layer.sublayers = nil
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
-        gradient.colors = [UIColor.black.withAlphaComponent(0.3).cgColor, UIColor.clear.cgColor]
         self.layer.addSublayer(gradient)
+        gradient.colors = [UIColor.black.withAlphaComponent(0.3).cgColor, UIColor.clear.cgColor]
     }
     
     @objc func deviceRotated(){
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
-                applyGradient()
-//        }
-        
+        applyGradient()
     }
 }

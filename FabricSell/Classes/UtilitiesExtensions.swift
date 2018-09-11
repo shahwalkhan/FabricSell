@@ -64,10 +64,10 @@ extension UIColor {
     }
 }
 
-//extension Bundle {
-//    static var bundle:Bundle {
-//        let podBundle = Bundle(for: EGOfferGridViewController.self)
-//        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
-//        return Bundle(url: bundleURL!)!
-//    }
-//}
+extension Bundle {
+    static var bundle:Bundle {
+        let podBundle = Bundle(for: EGOfferGridViewController.self)
+        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
+        return Bundle(url: bundleURL!)!
+    }
+}

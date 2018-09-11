@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FabricSell'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'This is all about giving and sharing and taking and receiving.'
   s.swift_version    = '4.0'
 # This description is used to generate tags and improve search results.

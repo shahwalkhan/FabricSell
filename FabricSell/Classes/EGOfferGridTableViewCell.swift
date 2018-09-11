@@ -21,6 +21,7 @@ open class EGOfferGridTableViewCell: UITableViewCell {
         offerTitle.numberOfLines = 0;
         offerTitle.sizeToFit()
         loadFont()
+        
     }
     
      // MARK: - Set details
@@ -33,33 +34,9 @@ open class EGOfferGridTableViewCell: UITableViewCell {
             offerOff.isHidden = false
         }
         
-        if let offerEndDate = convertStringToDate(date: model.offerEndDate) {
+        if let offerEndDate =  ECOfferViewModel.convertStringToDate(date: model.offerEndDate) {
             subTitle.text = "\(EngagingChoiceOfferText.validTill.rawValue) \(String(describing: offerEndDate))"
         }
-        
-        //if let offerText = model.offerTitle {
-         
-            
-//            if offerText.count > 28 {
-//                titleHeightContraint.constant = 60
-//            } else {
-//                titleHeightContraint.constant = 24
-//            }
-        //}
-       
-    }
-    
-    func convertStringToDate(date:String) -> String? {
-        let formatter = DateFormatter()
-        formatter.dateFormat = FormatterDate.YYMdHHm.rawValue
-        
-        let mmdyFormatter = DateFormatter()
-        mmdyFormatter.dateFormat = FormatterDate.MMDY.rawValue
-        
-        if let date = formatter.date(from: "\(date) 00:00:00") {
-            return mmdyFormatter.string(from: date)
-        }
-        return nil
     }
     
      // MARK: - Load Fonts

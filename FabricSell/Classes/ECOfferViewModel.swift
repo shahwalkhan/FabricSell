@@ -28,5 +28,18 @@ class ECOfferViewModel {
             //    PUT Some meaningfull message here
         }
     }
-
+    
+    // MARK: - Convert string date to MMM dd, yyyy
+    class func convertStringToDate(date:String) -> String? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = FormatterDate.YYMdHHm.rawValue
+        
+        let mmdyFormatter = DateFormatter()
+        mmdyFormatter.dateFormat = FormatterDate.MMDY.rawValue
+        
+        if let date = formatter.date(from: "\(date) 00:00:00") {
+            return mmdyFormatter.string(from: date)
+        }
+        return nil
+    }
 }

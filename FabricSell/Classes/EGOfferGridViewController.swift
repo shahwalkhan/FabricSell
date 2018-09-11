@@ -12,8 +12,11 @@ public class EGOfferGridViewController: UIViewController {
     @IBOutlet weak var headerTitle: UILabel!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - ModelView instance
     fileprivate let gridModelView = ECOfferViewModel()
 
+    // MARK: - Controller Life Cycle method
     override open func viewDidLoad() {
         super.viewDidLoad()
         _ = UIFont.registerFont(bundle: Bundle.bundle, fontName: "OpenSans-SemiBold", fontExtension: "ttf")
@@ -39,14 +42,6 @@ public class EGOfferGridViewController: UIViewController {
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-}
-
-extension Bundle {
-    static var bundle:Bundle {
-        let podBundle = Bundle(for: EGOfferGridViewController.self)
-        let bundleURL = podBundle.url(forResource: "FabricSell", withExtension: "bundle")
-        return Bundle(url: bundleURL!)!
     }
 }
 
