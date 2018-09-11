@@ -10,9 +10,9 @@ import UIKit
 public class EGOfferGridViewController: UIViewController {
 
     @IBOutlet weak var headerTitle: UILabel!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var shimmerView: UIImageView!
+
     // MARK: - ModelView instance
     fileprivate let gridModelView = ECOfferViewModel()
 
@@ -29,7 +29,7 @@ public class EGOfferGridViewController: UIViewController {
         
         // Get data from ViewModel
         gridModelView.fetchOfferList {
-            self.activityIndicatorView.stopAnimating()
+            self.shimmerView.isHidden = true
             self.tableView.reloadData()
         }
     }
@@ -56,7 +56,7 @@ extension EGOfferGridViewController:UITableViewDataSource {
         }
         cell.bannderImageView.image = nil
         if let baseURL = gridModelView.baseURL, let fileURL = gridModelView.offerList[indexPath.row].fileName, let url = URL(string: "\(baseURL)\(fileURL)")  {
-            cell.bannderImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "CellShimmer"), options: .highPriority, completed: nil)
+            cell.bannderImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "cellShimmer"), options: .highPriority, completed: nil)
         }
         cell.setContent(model: gridModelView.offerList[indexPath.row])
         return cell

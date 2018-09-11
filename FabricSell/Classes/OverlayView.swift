@@ -37,7 +37,7 @@ class OverlayView: UIView {
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
         self.layer.addSublayer(gradient)
-        gradient.colors = [UIColor.black.withAlphaComponent(0.3).cgColor, UIColor.clear.cgColor]
+        gradient.colors = [UIColor.black.withAlphaComponent(0.3).cgColor, UIColor.black.withAlphaComponent(0.3).cgColor]
     }
     
     @objc func deviceRotated(){

@@ -17,8 +17,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGOfferGridViewController" customModule="FabricSell" customModuleProvider="target">
             <connections>
-                <outlet property="activityIndicatorView" destination="HKY-8y-bKD" id="Wte-Jx-FXE"/>
                 <outlet property="headerTitle" destination="6sv-MD-tlP" id="cLV-y9-B6p"/>
+                <outlet property="shimmerView" destination="keB-xB-1fs" id="cPO-fm-qqE"/>
                 <outlet property="tableView" destination="uo3-6A-ekv" id="piv-sP-4db"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -32,14 +32,6 @@
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HKY-8y-bKD">
-                    <rect key="frame" x="178" y="324" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="20" id="Y6h-FI-69i"/>
-                        <constraint firstAttribute="height" constant="20" id="cdI-zw-woe"/>
-                    </constraints>
-                    <color key="color" red="0.23921568630000001" green="0.41568627450000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </activityIndicatorView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBn-gA-NSI">
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                     <subviews>
@@ -77,17 +69,22 @@
                         <constraint firstAttribute="trailing" secondItem="6sv-MD-tlP" secondAttribute="trailing" constant="10" id="xVI-RN-6W6"/>
                     </constraints>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableViewSimmer" translatesAutoresizingMaskIntoConstraints="NO" id="keB-xB-1fs">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.094117647060000004" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="uo3-6A-ekv" firstAttribute="top" secondItem="tBn-gA-NSI" secondAttribute="bottom" id="63Q-hm-ne2"/>
                 <constraint firstItem="tBn-gA-NSI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9jA-x0-Pax"/>
-                <constraint firstItem="HKY-8y-bKD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fig-Do-6rk"/>
-                <constraint firstItem="HKY-8y-bKD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MfT-Q3-6xw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="keB-xB-1fs" secondAttribute="bottom" id="KKS-SA-QFk"/>
+                <constraint firstItem="keB-xB-1fs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ks4-jh-Oex"/>
                 <constraint firstItem="tBn-gA-NSI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="U09-sE-s8S"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uo3-6A-ekv" secondAttribute="trailing" id="XGb-nd-lpU"/>
                 <constraint firstItem="tBn-gA-NSI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ywa-QK-Z4a"/>
                 <constraint firstItem="uo3-6A-ekv" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Z9M-C5-iOd"/>
+                <constraint firstItem="keB-xB-1fs" firstAttribute="top" secondItem="tBn-gA-NSI" secondAttribute="bottom" id="aC9-GL-UDg"/>
+                <constraint firstItem="keB-xB-1fs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lHI-5u-JSc"/>
                 <constraint firstItem="uo3-6A-ekv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qHe-rd-3Ye"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -95,6 +92,7 @@
         </view>
     </objects>
     <resources>
+        <image name="tableViewSimmer" width="375" height="624"/>
         <image name="whiteCrossIcon" width="25" height="25"/>
     </resources>
 </document>

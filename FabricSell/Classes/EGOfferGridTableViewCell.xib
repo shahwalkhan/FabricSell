@@ -16,9 +16,6 @@
         <array key="OpenSans-Regular.ttf">
             <string>OpenSans-Regular</string>
         </array>
-        <array key="OpenSans-SemiBold.ttf">
-            <string>OpenSans-SemiBold</string>
-        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -33,27 +30,17 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="okN-5Q-Ubg">
                         <rect key="frame" x="0.0" y="0.0" width="483" height="190"/>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pJ-fs-uDZ" customClass="OverlayView" customModule="FabricSell" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="483" height="190"/>
-                    </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="94x-3m-2HF">
-                        <rect key="frame" x="444" y="153.5" width="14" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="ED9-y4-hCq"/>
-                            <constraint firstAttribute="width" constant="14" id="spN-rx-6qf"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlay" translatesAutoresizingMaskIntoConstraints="NO" id="klX-oI-EaW">
+                        <rect key="frame" x="0.0" y="0.0" width="483" height="189"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhL-Lb-CcK">
-                        <rect key="frame" x="405" y="152.5" width="39" height="20"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyJ-62-RA2">
+                        <rect key="frame" x="403" y="157.5" width="55" height="22"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="2td-3V-KWI"/>
-                            <constraint firstAttribute="width" constant="39" id="MzP-sX-Pdl"/>
+                            <constraint firstAttribute="width" constant="55" id="3Zr-3P-DjM"/>
+                            <constraint firstAttribute="height" constant="22" id="Fz6-pK-01B"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
-                        <color key="textColor" red="0.95294117649999999" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </label>
+                        <state key="normal" image="view"/>
+                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWo-1k-77N">
                         <rect key="frame" x="10" y="16" width="353" height="20.5"/>
                         <constraints>
@@ -121,22 +108,20 @@
                     <constraint firstItem="okN-5Q-Ubg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6eV-xE-CSG"/>
                     <constraint firstItem="Mmk-Je-ZvT" firstAttribute="leading" secondItem="EWo-1k-77N" secondAttribute="trailing" constant="10" id="7ei-q1-Ban"/>
                     <constraint firstItem="EWo-1k-77N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Bhm-1y-qtY"/>
-                    <constraint firstAttribute="bottom" secondItem="GhL-Lb-CcK" secondAttribute="bottom" constant="17" id="CIh-v3-Erp"/>
+                    <constraint firstAttribute="trailing" secondItem="MyJ-62-RA2" secondAttribute="trailing" constant="25" id="Gds-cD-Kzc"/>
                     <constraint firstAttribute="trailing" secondItem="Mmk-Je-ZvT" secondAttribute="trailing" constant="10" id="Lzo-Kf-kHE"/>
                     <constraint firstItem="pS6-4q-lXx" firstAttribute="trailing" secondItem="EWo-1k-77N" secondAttribute="trailing" id="McL-8x-4Eo"/>
                     <constraint firstItem="Mmk-Je-ZvT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Qpj-25-2vO"/>
+                    <constraint firstItem="klX-oI-EaW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tfe-dd-alj"/>
                     <constraint firstAttribute="bottom" secondItem="okN-5Q-Ubg" secondAttribute="bottom" id="UcV-XM-8Ta"/>
+                    <constraint firstAttribute="trailing" secondItem="klX-oI-EaW" secondAttribute="trailing" id="V9J-qU-QJS"/>
                     <constraint firstItem="okN-5Q-Ubg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WhF-Y7-7aq"/>
                     <constraint firstItem="EWo-1k-77N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="X8i-S0-maz"/>
-                    <constraint firstItem="94x-3m-2HF" firstAttribute="leading" secondItem="GhL-Lb-CcK" secondAttribute="trailing" id="cXt-SI-GPw"/>
+                    <constraint firstAttribute="bottom" secondItem="klX-oI-EaW" secondAttribute="bottom" id="fPc-FC-YaZ"/>
                     <constraint firstItem="pS6-4q-lXx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="i12-BC-49J"/>
-                    <constraint firstAttribute="trailing" secondItem="5pJ-fs-uDZ" secondAttribute="trailing" id="qm3-1C-r9r"/>
-                    <constraint firstAttribute="trailing" secondItem="94x-3m-2HF" secondAttribute="trailing" constant="25" id="qx2-AM-EJb"/>
+                    <constraint firstAttribute="bottom" secondItem="MyJ-62-RA2" secondAttribute="bottom" constant="10" id="onh-sd-JjM"/>
+                    <constraint firstItem="klX-oI-EaW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tMI-1u-hTk"/>
                     <constraint firstItem="pS6-4q-lXx" firstAttribute="top" secondItem="EWo-1k-77N" secondAttribute="bottom" id="we1-k3-M5b"/>
-                    <constraint firstAttribute="bottom" secondItem="5pJ-fs-uDZ" secondAttribute="bottom" id="wud-a1-9cV"/>
-                    <constraint firstItem="5pJ-fs-uDZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xsq-js-AYT"/>
-                    <constraint firstAttribute="bottom" secondItem="94x-3m-2HF" secondAttribute="bottom" constant="15" id="zJV-MD-39G"/>
-                    <constraint firstItem="5pJ-fs-uDZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zkg-NT-tkm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -152,6 +137,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="arrow" width="14" height="21"/>
+        <image name="overlay" width="375" height="200"/>
+        <image name="view" width="55" height="22"/>
     </resources>
 </document>
