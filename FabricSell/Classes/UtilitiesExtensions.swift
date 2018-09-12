@@ -14,7 +14,9 @@ enum EngagingChoiceGridCell:CGFloat {
     case cellHeight = 200
 }
 enum EngagingChoiceAPI:String {
-    case offerListURL = "https://funn-qa.kiwireader.com/publisherapi/offer-list"
+    case QAOfferListURL = "https://funn-qa.kiwireader.com/publisherapi/offer-list"
+    case DevOfferListURL = "https://funn-dev.kiwireader.com/publisherapi/offer-list"
+    case StagOfferListURL = "https://funn-staging.kiwireader.com/publisherapi/offer-list"
 }
 
 enum FormatterDate:String {

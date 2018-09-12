@@ -69,6 +69,8 @@ extension EGOfferGridViewController:UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let detailGridViewController = EGOfferGridDetailViewController(nibName: "\(EGOfferGridDetailViewController.self)", bundle: Bundle.bundle)
+//        detailGridViewController.offerModel = gridModelView.offerList[indexPath.row]
+//        detailGridViewController.baseURL = gridModelView.baseURL
 //        self.show(detailGridViewController, sender: self)
     }
 }

@@ -24,7 +24,7 @@ In detail description I dont have anything to describe about this project
   s.homepage         = 'https://github.com/shahwal/FabricSell'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'shahwalkhan@gmail.com' => 'shahwalkhan@gmail.com' }
+  s.author           = { 'kiwitech' => 'shahwalkhan@gmail.com' }
   s.source           = { :git => 'https://github.com/shahwal/FabricSell.git', :branch => 'master', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -38,7 +38,7 @@ In detail description I dont have anything to describe about this project
    #  s.resources = 'FabricSell/Resources/*.ttf'
 #   s.resources = ['FabricSell/Resources/Pod.bundle']
   # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'UIKit'
+   s.frameworks = 'UIKit', 'AVKit'
    s.dependency 'Alamofire'
    s.dependency 'SDWebImage'
 end

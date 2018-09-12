@@ -10,7 +10,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "shahwalkhan@gmail.com": "shahwalkhan@gmail.com"
+    "kiwitech": "shahwalkhan@gmail.com"
   },
   "source": {
     "git": "https://github.com/shahwal/FabricSell.git",
@@ -27,7 +27,10 @@
       "FabricSell/Resources/**/*.{xcassets,json,imageset,png,ttf}"
     ]
   },
-  "frameworks": "UIKit",
+  "frameworks": [
+    "UIKit",
+    "AVKit"
+  ],
   "dependencies": {
     "Alamofire": [
 
